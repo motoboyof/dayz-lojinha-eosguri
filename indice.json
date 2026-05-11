@@ -1866,7 +1866,7 @@
     ]
   },
   {
-    "imagem": "Vehicle parts (Peças de veiculo) 1.png",
+    "imagem": "img/Vehicle parts (Peças de veiculo) 1.png",
     "itens": [
       "Bateria de caminhão",
       "Bateria de carro",
@@ -1891,7 +1891,7 @@
     ]
   },
   {
-    "imagem": "Vehicle parts (Peças de veiculo) 2.png",
+    "imagem": "img/Vehicle parts (Peças de veiculo) 2.png",
     "itens": [
       "Land Rover Defender Back- Right Door",
       "Land Rover Defender Back-Left Door",
@@ -1916,7 +1916,7 @@
     ]
   },
   {
-    "imagem": "Vehicle parts (Peças de veiculo) 3.png",
+    "imagem": "img/Vehicle parts (Peças de veiculo) 3.png",
     "itens": [
       "Porta no Escalade",
       "Porta no Escalade",
@@ -1941,7 +1941,7 @@
     ]
   },
   {
-    "imagem": "Vehicle parts (Peças de veiculo) 4.png",
+    "imagem": "img/Vehicle parts (Peças de veiculo) 4.png",
     "itens": [
       "Roda Olga 24",
       "Roda Sarka 120",
@@ -1965,7 +1965,7 @@
     ]
   },
   {
-    "imagem": "Vehicle parts (Peças de veiculo) 5.png",
+    "imagem": "img/Vehicle parts (Peças de veiculo) 5.png",
     "itens": [
       "STR_nehr_pickupladadoors_driver",
       "STR_nehr_pickupladahood",
@@ -1983,7 +1983,7 @@
     ]
   },
   {
-    "imagem": "Trucks (SUV) 1.png",
+    "imagem": "img/Trucks (SUV) 1.png",
     "itens": [
       "Escalada Amarela",
       "Escalada Azul",
@@ -2007,7 +2007,7 @@
     ]
   },
   {
-    "imagem": "Trucks (SUV) 2.png",
+    "imagem": "img/Trucks (SUV) 2.png",
     "itens": [
       "STR_bastard_btr70",
       "STR_bastard_btr70",
@@ -2030,7 +2030,7 @@
     ]
   },
   {
-    "imagem": "Trucks (SUV) 3.png",
+    "imagem": "img/Trucks (SUV) 3.png",
     "itens": [
       "Toyota Hilux",
       "Toyota Hilux",
@@ -2039,7 +2039,7 @@
     ]
   },
   {
-    "imagem": "Cars (Carros) 1.png",
+    "imagem": "img/Cars (Carros) 1.png",
     "itens": [
       "Ada 4x4",
       "Ada 4x4",
@@ -2065,7 +2065,7 @@
     ]
   },
   {
-    "imagem": "Cars (Carros) 2.png",
+    "imagem": "img/Cars (Carros) 2.png",
     "itens": [
       "STR_snowmobile_white"
     ]
