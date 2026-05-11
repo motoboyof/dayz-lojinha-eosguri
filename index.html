@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayZ Lojinha - Consulta</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #e0e0e0; text-align: center; padding: 20px; margin: 0; }
+        h1 { color: #ff4c4c; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* Estilo da Busca */
+        .search-container { margin-bottom: 30px; }
+        input { padding: 15px; width: 85%; max-width: 600px; font-size: 18px; border-radius: 30px; border: 2px solid #333; background: #1e1e1e; color: white; outline: none; transition: 0.3s; }
+        input:focus { border-color: #ff4c4c; box-shadow: 0 0 10px rgba(255, 76, 76, 0.3); }
+
+        /* Estilo dos Menus de Categoria */
+        .categories-container { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+        .btn-cat { padding: 10px 20px; background: #333; border: none; color: white; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .btn-cat:hover { background: #ff4c4c; }
+        
+        .sub-categories { display: none; margin-top: 15px; background: #1e1e1e; padding: 15px; border-radius: 10px; }
+        .btn-sub { margin: 5px; padding: 8px 15px; background: #444; border: none; color: white; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        .btn-sub:hover { background: #666; }
+
+        /* Exibição da Imagem */
+        .resultado { margin-top: 30px; }
+        img { max-width: 100%; border: 3px solid #333; border-radius: 8px; animation: fadeIn 0.5s; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <h1>EosGuri DayZ Store</h1>
+
+    <div class="search-container">
+        <input type="text" id="busca" placeholder="Pesquisar item (ex: M4A1, C4, AA-12...)" onkeyup="buscarItem()">
+    </div>
+
+    <div id="menuCategorias" class="categories-container">
+        </div>
+
+    <div id="menuSubCategorias" class="sub-categories">
+        </div>
+
+    <div class="resultado" id="resultadoImg">
+        <p id="placeholderText">Use a busca acima ou escolha uma categoria.</p>
+    </div>
+
+    <script>
+        let bancoDeDados = [];
+
+        // Carrega o JSON
+        fetch('indice.json')
+            .then(res => res.json())
+            .then(data => {
+                bancoDeDados = data;
+                gerarMenuCategorias();
+            });
+
+        // 1. FUNÇÃO DE BUSCA DIRETA
+        function buscarItem() {
+            let texto = document.getElementById('busca').value.toLowerCase();
+            let divImg = document.getElementById('resultadoImg');
+            document.getElementById('menuSubCategorias').style.display = 'none';
+
+            if (texto.length < 2) {
+                divImg.innerHTML = '<p>Digite pelo menos 2 letras...</p>';
+                return;
+            }
+
+            let achou = bancoDeDados.find(bloco => 
+                bloco.itens.some(i => i.toLowerCase().includes(texto))
+            );
+
+            if (achou) {
+                divImg.innerHTML = `<img src="${achou.imagem}">`;
+            } else {
+                divImg.innerHTML = '<p style="color: #ff4c4c">Item não encontrado.</p>';
+            }
+        }
+
+        // 2. FUNÇÃO PARA GERAR O MENU DE CATEGORIAS (ARMAS, RAID, etc)
+        function gerarMenuCategorias() {
+            const menuCat = document.getElementById('menuCategorias');
+            // Extrai as categorias únicas dos nomes dos arquivos (o que está entre parênteses)
+            const categorias = [...new Set(bancoDeDados.map(b => {
+                let match = b.imagem.match(/\(([^)]+)\)/);
+                return match ? match[1] : "OUTROS";
+            }))];
+
+            categorias.forEach(cat => {
+                let btn = document.createElement('button');
+                btn.className = 'btn-cat';
+                btn.innerText = cat;
+                btn.onclick = () => mostrarSubCategorias(cat);
+                menuCat.appendChild(btn);
+            });
+        }
+
+        // 3. FUNÇÃO PARA MOSTRAR AS SUBCATEGORIAS (Assault, Snipers...)
+        function mostrarSubCategorias(catPai) {
+            const subMenu = document.getElementById('menuSubCategorias');
+            subMenu.innerHTML = '';
+            subMenu.style.display = 'block';
+            document.getElementById('busca').value = ''; // limpa a busca
+
+            // Filtra os arquivos que pertencem àquela categoria pai
+            const subs = bancoDeDados.filter(b => b.imagem.includes(`(${catPai})`));
+
+            subs.forEach(s => {
+                // Pega apenas o nome da subcategoria antes do parênteses
+                let nomeSub = s.imagem.replace('img/', '').split(' (')[0];
+                let btn = document.createElement('button');
+                btn.className = 'btn-sub';
+                btn.innerText = nomeSub;
+                btn.onclick = () => {
+                    document.getElementById('resultadoImg').innerHTML = `<img src="${s.imagem}">`;
+                };
+                subMenu.appendChild(btn);
+            });
+        }
+    </script>
+</body>
+</html>
