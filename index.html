@@ -7,7 +7,7 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #e0e0e0; text-align: center; padding: 20px; margin: 0; }
         h1 { color: #ff4c4c; text-transform: uppercase; letter-spacing: 2px; }
-        
+
         /* Estilo da Busca */
         .search-container { margin-bottom: 30px; }
         input { padding: 15px; width: 85%; max-width: 600px; font-size: 18px; border-radius: 30px; border: 2px solid #333; background: #1e1e1e; color: white; outline: none; transition: 0.3s; }
@@ -17,17 +17,18 @@
         .categories-container { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
         .btn-cat { padding: 10px 20px; background: #333; border: none; color: white; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
         .btn-cat:hover { background: #ff4c4c; }
-        
+
         .sub-categories { display: none; margin-top: 15px; background: #1e1e1e; padding: 15px; border-radius: 10px; }
         .btn-sub { margin: 5px; padding: 8px 15px; background: #444; border: none; color: white; border-radius: 4px; cursor: pointer; font-size: 14px; }
         .btn-sub:hover { background: #666; }
 
-        /* Exibição da Imagem */
+        /* Exibição das Imagens */
         .resultado { margin-top: 30px; }
         .resultado img { max-width: 100%; border: 3px solid #333; border-radius: 8px; animation: fadeIn 0.5s; display: block; margin: 0 auto 20px auto; }
-        
+
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        .hidden { display: none; }
+
+        .erro-img { color: #ff4c4c; font-size: 13px; margin: 4px 0 16px; font-family: monospace; word-break: break-all; }
     </style>
 </head>
 <body>
@@ -39,33 +40,53 @@
     </div>
 
     <div id="menuCategorias" class="categories-container"></div>
-
     <div id="menuSubCategorias" class="sub-categories"></div>
-
     <div class="resultado" id="resultadoImg">
-        <p id="placeholderText">Use a busca acima ou escolha uma categoria.</p>
+        <p>Use a busca acima ou escolha uma categoria.</p>
     </div>
 
     <script>
         let bancoDeDados = [];
 
-        // Codifica o caminho da imagem para URL válida (trata espaços e parênteses)
+        // ── Codificação de URL ──────────────────────────────────────────────
+        // Codifica espaços e & — os únicos caracteres que quebram URLs de imagem.
+        // Parênteses são permitidos em paths (RFC 3986) e o GitHub Pages
+        // os serve corretamente sem encode.
         function encodePath(caminho) {
-            return caminho.split('/').map(parte => encodeURIComponent(parte)).join('/');
+            return caminho
+                .replace(/ /g, '%20')
+                .replace(/&/g, '%26');
         }
 
-        // Carrega o JSON
+        // ── Cria <img> com handler de erro para depuração ──────────────────
+        function criarImg(caminho) {
+            const url = encodePath(caminho);
+            const img = document.createElement('img');
+            img.src = url;
+            img.alt = caminho;
+            img.onerror = function () {
+                const msg = document.createElement('p');
+                msg.className = 'erro-img';
+                msg.textContent = '⚠ Não encontrado: ' + url;
+                this.parentNode && this.parentNode.insertBefore(msg, this.nextSibling);
+                this.remove();
+            };
+            return img;
+        }
+
+        // ── Carregamento do JSON ────────────────────────────────────────────
         fetch('indice.json')
             .then(res => res.json())
             .then(data => {
                 bancoDeDados = data;
                 gerarMenuCategorias();
-            });
+            })
+            .catch(err => console.error('Falha ao carregar indice.json:', err));
 
-        // 1. FUNÇÃO DE BUSCA DIRETA
+        // ── 1. BUSCA DIRETA ─────────────────────────────────────────────────
         function buscarItem() {
-            let texto = document.getElementById('busca').value.toLowerCase();
-            let divImg = document.getElementById('resultadoImg');
+            const texto = document.getElementById('busca').value.toLowerCase();
+            const divImg = document.getElementById('resultadoImg');
             document.getElementById('menuSubCategorias').style.display = 'none';
 
             if (texto.length < 2) {
@@ -73,31 +94,36 @@
                 return;
             }
 
-            // Busca TODOS os blocos que contenham o item (não apenas o primeiro)
-            let encontrados = bancoDeDados.filter(bloco =>
-                bloco.itens.some(i => i.toLowerCase().includes(texto))
-            );
+            // Caminhos únicos que contêm o item pesquisado
+            const vistos = new Set();
+            const encontrados = [];
+            bancoDeDados.forEach(bloco => {
+                if (!vistos.has(bloco.imagem) &&
+                    bloco.itens.some(i => i.toLowerCase().includes(texto))) {
+                    vistos.add(bloco.imagem);
+                    encontrados.push(bloco.imagem);
+                }
+            });
 
+            divImg.innerHTML = '';
             if (encontrados.length > 0) {
-                divImg.innerHTML = encontrados
-                    .map(b => `<img src="${encodePath(b.imagem)}">`)
-                    .join('');
+                encontrados.forEach(caminho => divImg.appendChild(criarImg(caminho)));
             } else {
-                divImg.innerHTML = '<p style="color: #ff4c4c">Item não encontrado.</p>';
+                divImg.innerHTML = '<p style="color:#ff4c4c">Item não encontrado.</p>';
             }
         }
 
-        // 2. FUNÇÃO PARA GERAR O MENU DE CATEGORIAS (ARMAS, RAID, etc)
+        // ── 2. MENU DE CATEGORIAS ───────────────────────────────────────────
+        // Regex original preservada — não alterar.
         function gerarMenuCategorias() {
             const menuCat = document.getElementById('menuCategorias');
-            // Extrai as categorias únicas dos nomes dos arquivos (o que está entre parênteses)
             const categorias = [...new Set(bancoDeDados.map(b => {
-                let match = b.imagem.match(/\(([^)]+)\)/);
-                return match ? match[1] : "OUTROS";
+                const match = b.imagem.match(/\(([^)]+)\)/);
+                return match ? match[1] : 'OUTROS';
             }))];
 
             categorias.forEach(cat => {
-                let btn = document.createElement('button');
+                const btn = document.createElement('button');
                 btn.className = 'btn-cat';
                 btn.innerText = cat;
                 btn.onclick = () => mostrarSubCategorias(cat);
@@ -105,8 +131,11 @@
             });
         }
 
-        // 3. FUNÇÃO PARA MOSTRAR AS SUBCATEGORIAS (Assault, Snipers...)
-        //    Agrupa entradas com o mesmo nome de subcategoria num único botão
+        // ── 3. SUBCATEGORIAS ────────────────────────────────────────────────
+        // Usa Map (ordem de inserção) + Set (sem caminhos duplicados).
+        // Resolve:
+        //   a) Nomes repetidos  → um único botão por nome
+        //   b) Caminhos iguais  → cada imagem carregada apenas uma vez
         function mostrarSubCategorias(catPai) {
             const subMenu = document.getElementById('menuSubCategorias');
             subMenu.innerHTML = '';
@@ -114,27 +143,30 @@
             document.getElementById('busca').value = '';
             document.getElementById('resultadoImg').innerHTML = '';
 
-            // Filtra os arquivos que pertencem àquela categoria pai
             const subs = bancoDeDados.filter(b => b.imagem.includes(`(${catPai})`));
 
-            // Agrupa por nome de subcategoria (evita duplicatas como Handguards 1, 2, 3, 4)
-            const grupos = {};
+            // Map  nomeSub  →  Set de caminhos únicos
+            const grupos = new Map();
             subs.forEach(s => {
-                // Pega apenas o nome da subcategoria antes do primeiro parêntese
-                let nomeSub = s.imagem.replace('img/', '').split(' (')[0].trim();
-                if (!grupos[nomeSub]) grupos[nomeSub] = [];
-                grupos[nomeSub].push(s.imagem);
+                const nomeSub = s.imagem
+                    .replace(/^img\//, '')   // remove "img/"
+                    .split(' (')[0]          // pega só o nome antes do " ("
+                    .trim();
+
+                if (!grupos.has(nomeSub)) grupos.set(nomeSub, new Set());
+                grupos.get(nomeSub).add(s.imagem);
             });
 
-            // Cria um botão por nome único; ao clicar mostra todas as imagens do grupo
-            Object.entries(grupos).forEach(([nome, imagens]) => {
-                let btn = document.createElement('button');
+            // Um botão por nome único
+            grupos.forEach((imagensSet, nome) => {
+                const imagens = [...imagensSet];
+                const btn = document.createElement('button');
                 btn.className = 'btn-sub';
                 btn.innerText = nome;
                 btn.onclick = () => {
-                    document.getElementById('resultadoImg').innerHTML = imagens
-                        .map(img => `<img src="${encodePath(img)}">`)
-                        .join('');
+                    const divImg = document.getElementById('resultadoImg');
+                    divImg.innerHTML = '';
+                    imagens.forEach(caminho => divImg.appendChild(criarImg(caminho)));
                 };
                 subMenu.appendChild(btn);
             });
