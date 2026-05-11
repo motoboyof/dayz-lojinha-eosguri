@@ -1864,5 +1864,210 @@
       "SV-98",
       "VSSM"
     ]
+  },
+  {
+    "imagem": "Vehicle parts (Peças de veiculo) 1.jpg",
+    "itens": [
+      "Bateria de caminhão",
+      "Bateria de carro",
+      "Caixa de lâmpada de farol",
+      "Capuz para Escalade",
+      "Capô Ada 4x4",
+      "Capô Gunter 2",
+      "Capô M1025",
+      "Capô M3S",
+      "Capô Olga 24",
+      "Capô Sarka 120",
+      "CoDriver Door",
+      "Driver Door",
+      "GAZ TIGR-M Hood",
+      "GAZ TIGR-M Left Door",
+      "GAZ TIGR-M Rear Left Door",
+      "GAZ TIGR-M Rear Right Door",
+      "GAZ TIGR-M Right Door",
+      "Glow Plug",
+      "Hood",
+      "Kit de conserto de pneus"
+    ]
+  },
+  {
+    "imagem": "Vehicle parts (Peças de veiculo) 2.jpg",
+    "itens": [
+      "Land Rover Defender Back- Right Door",
+      "Land Rover Defender Back-Left Door",
+      "Land Rover Defender Front-Left Door",
+      "Land Rover Defender Front-Right Door",
+      "Land Rover Defender Hood",
+      "Land Rover Defender Trunk",
+      "Land Rover Defender Wheel",
+      "Lâmpada de farol",
+      "Porta dianteira direita Gunter 2",
+      "Porta dianteira direita M1025",
+      "Porta dianteira direita Olga 24",
+      "Porta dianteira direita Sarka 120",
+      "Porta dianteira esquerda Gunter 2",
+      "Porta dianteira esquerda M1025",
+      "Porta dianteira esquerda Olga 24",
+      "Porta dianteira esquerda Sarka 120",
+      "Porta direita Ada 4x4",
+      "Porta direita M3S",
+      "Porta esquerda Ada 4x4",
+      "Porta esquerda M3S"
+    ]
+  },
+  {
+    "imagem": "Vehicle parts (Peças de veiculo) 3.jpg",
+    "itens": [
+      "Porta no Escalade",
+      "Porta no Escalade",
+      "Porta no Escalade",
+      "Porta no Escalade",
+      "Porta traseira direita Gunter 2",
+      "Porta traseira direita M1025",
+      "Porta traseira direita Olga 24",
+      "Porta traseira direita Sarka 120",
+      "Porta traseira esquerda Gunter 2",
+      "Porta traseira esquerda M1025",
+      "Porta traseira esquerda Olga 24",
+      "Porta traseira esquerda Sarka 120",
+      "Radiador de carro",
+      "Roda Ada 4x4",
+      "Roda de quadriciclo",
+      "Roda dupla M3S",
+      "Roda Gunter 2",
+      "Roda M1025",
+      "Roda M3S",
+      "Roda no Escalade"
+    ]
+  },
+  {
+    "imagem": "Vehicle parts (Peças de veiculo) 4.jpg",
+    "itens": [
+      "Roda Olga 24",
+      "Roda Sarka 120",
+      "STR_bastard_bigfoot_doors_codriver",
+      "STR_bastard_bigfoot_doors_driver",
+      "STR_bastard_bigfoot_doors_hood",
+      "STR_bastard_bigfoot_doors_trunk",
+      "STR_bastard_bigfoot_wheel",
+      "STR_bastard_btr70_Doors",
+      "STR_bastard_btr70_Doors",
+      "STR_bastard_btr70_Doors",
+      "STR_bastard_btr70_Doors",
+      "STR_bastard_btr70_Wheel",
+      "STR_bastard_cj7_doors_codriver",
+      "STR_bastard_cj7_doors_driver",
+      "STR_bastard_cj7_doors_Hood",
+      "STR_bastard_cj7_doors_Trunk",
+      "STR_Bastard_cj7_wheel",
+      "STR_nehr_pickupladadoors_trunk",
+      "STR_nehr_pickupladadoors_codriver"
+    ]
+  },
+  {
+    "imagem": "Vehicle parts (Peças de veiculo) 5.jpg",
+    "itens": [
+      "STR_nehr_pickupladadoors_driver",
+      "STR_nehr_pickupladahood",
+      "Tampa de porta-malas Ada 4x4",
+      "Tampa de porta-malas Gunter 2",
+      "Tampa de porta-malas Olga 24",
+      "Tampa porta-malas M1025",
+      "Tampa porta-malas Sarka 120",
+      "Tronco para Escalade",
+      "Trunk",
+      "Vela de Ignição",
+      "Wheel",
+      "Wheel for GAZ TIGR-M",
+      "Óleo de motor"
+    ]
+  },
+  {
+    "imagem": "Trucks (SUV) 1.jpg",
+    "itens": [
+      "Escalada Amarela",
+      "Escalada Azul",
+      "Escalada Branca",
+      "Escalada de Framboesa",
+      "Escalada do Deserto",
+      "Escalada Negra",
+      "Escalada Verde",
+      "Escalada Vermelha",
+      "GAZ TIGR-M 233014",
+      "GAZ TIGR-M 233014",
+      "M1025",
+      "M3S coberto",
+      "M3S coberto",
+      "M3S coberto",
+      "STR_bastard_bigfoot_tent",
+      "STR_bastard_bigfoot_tent",
+      "STR_bastard_bigfoot_tent",
+      "STR_bastard_bigfoot_tent",
+      "STR_bastard_btr70"
+    ]
+  },
+  {
+    "imagem": "Trucks (SUV) 2.jpg",
+    "itens": [
+      "STR_bastard_btr70",
+      "STR_bastard_btr70",
+      "STR_bastard_btr70",
+      "STR_Bastard_cj7",
+      "STR_Bastard_cj7",
+      "STR_Bastard_cj7",
+      "STR_Bastard_cj7",
+      "STR_Bastard_cj7",
+      "STR_DN_CAR",
+      "STR_DN_CAR",
+      "STR_DN_CAR",
+      "STR_DN_CAR",
+      "STR_DN_CAR",
+      "STR_nehr_pickuplada",
+      "STR_nehr_pickuplada",
+      "STR_nehr_pickuplada",
+      "STR_nehr_pickuplada",
+      "Toyota Hilux"
+    ]
+  },
+  {
+    "imagem": "Trucks (SUV) 3.jpg",
+    "itens": [
+      "Toyota Hilux",
+      "Toyota Hilux",
+      "Toyota Hilux",
+      "Toyota Hilux"
+    ]
+  },
+  {
+    "imagem": "Cars (Carros) 1.jpg",
+    "itens": [
+      "Ada 4x4",
+      "Ada 4x4",
+      "Ada 4x4",
+      "ATV camuflado",
+      "Gunter 2",
+      "Gunter 2",
+      "Gunter 2",
+      "Gunter 2",
+      "Olga 24",
+      "Olga 24",
+      "Olga 24",
+      "Quadriciclo Amarelo",
+      "Quadriciclo Azul",
+      "Quadriciclo Branco",
+      "Quadriciclo cinzento",
+      "Quadriciclo Preto",
+      "Quadriciclo vermelho",
+      "Quadrilátero Verde",
+      "Sarka 120",
+      "Sarka 120",
+      "Sarka 120"
+    ]
+  },
+  {
+    "imagem": "Cars (Carros) 2.png",
+    "itens": [
+      "STR_snowmobile_white"
+    ]
   }
 ]
