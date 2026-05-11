@@ -8,26 +8,78 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #e0e0e0; text-align: center; padding: 20px; margin: 0; }
         h1 { color: #ff4c4c; text-transform: uppercase; letter-spacing: 2px; }
 
-        /* Estilo da Busca */
-        .search-container { margin-bottom: 30px; }
+        /* ── Busca ─────────────────────────────────────────────────────── */
+        .search-container { margin-bottom: 24px; }
         input { padding: 15px; width: 85%; max-width: 600px; font-size: 18px; border-radius: 30px; border: 2px solid #333; background: #1e1e1e; color: white; outline: none; transition: 0.3s; }
-        input:focus { border-color: #ff4c4c; box-shadow: 0 0 10px rgba(255, 76, 76, 0.3); }
+        input:focus { border-color: #ff4c4c; box-shadow: 0 0 10px rgba(255,76,76,0.3); }
 
-        /* Estilo dos Menus de Categoria */
+        /* ── Seções Destaque ───────────────────────────────────────────── */
+        .featured-container {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 0 auto 28px;
+            max-width: 900px;
+        }
+
+        .card-destaque {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            min-width: 160px;
+            padding: 28px 36px;
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-bottom: 3px solid var(--cor, #ff4c4c);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+            user-select: none;
+        }
+        .card-destaque::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% -10%, var(--cor-alpha, rgba(255,76,76,0.12)) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .card-destaque:hover::before { opacity: 1; }
+        .card-destaque:hover {
+            transform: translateY(-3px);
+            border-color: var(--cor, #ff4c4c);
+            box-shadow: 0 6px 24px var(--cor-alpha, rgba(255,76,76,0.2));
+        }
+        .card-destaque:active { transform: translateY(-1px); }
+        .card-icon { width: 52px; height: 52px; display: block; }
+        .card-label { font-size: 13px; font-weight: 700; letter-spacing: 2.5px; color: #d0d0d0; text-transform: uppercase; }
+
+        /* ── Divisor ───────────────────────────────────────────────────── */
+        .secao-divider {
+            display: flex; align-items: center; gap: 14px;
+            margin: 0 auto 20px; max-width: 800px; opacity: 0.35;
+        }
+        .secao-divider::before, .secao-divider::after { content:''; flex:1; height:1px; background:#555; }
+        .secao-divider span { font-size: 11px; letter-spacing: 2px; white-space: nowrap; }
+
+        /* ── Categorias Regulares ──────────────────────────────────────── */
         .categories-container { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
         .btn-cat { padding: 10px 20px; background: #333; border: none; color: white; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
         .btn-cat:hover { background: #ff4c4c; }
 
+        /* ── Sub-categorias ────────────────────────────────────────────── */
         .sub-categories { display: none; margin-top: 15px; background: #1e1e1e; padding: 15px; border-radius: 10px; }
         .btn-sub { margin: 5px; padding: 8px 15px; background: #444; border: none; color: white; border-radius: 4px; cursor: pointer; font-size: 14px; }
         .btn-sub:hover { background: #666; }
 
-        /* Exibição das Imagens */
+        /* ── Resultados ────────────────────────────────────────────────── */
         .resultado { margin-top: 30px; }
         .resultado img { max-width: 100%; border: 3px solid #333; border-radius: 8px; animation: fadeIn 0.5s; display: block; margin: 0 auto 20px auto; }
-
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
         .erro-img { color: #ff4c4c; font-size: 13px; margin: 4px 0 16px; font-family: monospace; word-break: break-all; }
     </style>
 </head>
@@ -39,6 +91,10 @@
         <input type="text" id="busca" placeholder="Pesquisar item (ex: M4A1, C4, AA-12...)" onkeyup="buscarItem()">
     </div>
 
+    <div class="featured-container" id="featuredContainer"></div>
+
+    <div class="secao-divider"><span>CATEGORIAS</span></div>
+
     <div id="menuCategorias" class="categories-container"></div>
     <div id="menuSubCategorias" class="sub-categories"></div>
     <div class="resultado" id="resultadoImg">
@@ -46,131 +102,214 @@
     </div>
 
     <script>
-        let bancoDeDados = [];
 
-        // ── Codificação de URL ──────────────────────────────────────────────
-        // Codifica espaços e & — os únicos caracteres que quebram URLs de imagem.
-        // Parênteses são permitidos em paths (RFC 3986) e o GitHub Pages
-        // os serve corretamente sem encode.
-        function encodePath(caminho) {
-            return caminho
-                .replace(/ /g, '%20')
-                .replace(/&/g, '%26');
+    // ══════════════════════════════════════════════════════════════════════
+    // CONFIGURAÇÃO DAS SEÇÕES DESTAQUE
+    //
+    // "categorias" → nomes exatos dentro dos () nos nomes dos arquivos de imagem
+    //   Ex: "Cars (Carros) 1.png" → categoria = 'Carros'
+    //       "Trucks (SUV) 1.png"  → categoria = 'SUV'
+    //
+    // Para adicionar HELICÓPTEROS quando estiver pronto, descomente o
+    // bloco no final do array e ajuste o nome da categoria.
+    // ══════════════════════════════════════════════════════════════════════
+    const SECOES_DESTAQUE = [
+        {
+            label: 'VEÍCULOS',
+            cor: '#ff4c4c',
+            corAlpha: 'rgba(255,76,76,0.12)',
+            svgIcon: `<svg class="card-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 30 H46 V40 a3 3 0 0 1-3 3 H9 a3 3 0 0 1-3-3 Z" stroke="#ff4c4c" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M8 30 L14 16 H38 L44 30" stroke="#ff4c4c" stroke-width="2.2" stroke-linejoin="round"/>
+                <rect x="17" y="18" width="18" height="9" rx="1.5" stroke="#ff4c4c" stroke-width="1.8"/>
+                <circle cx="15" cy="40" r="5" stroke="#ff4c4c" stroke-width="2.2"/>
+                <circle cx="15" cy="40" r="2" fill="#ff4c4c"/>
+                <circle cx="37" cy="40" r="5" stroke="#ff4c4c" stroke-width="2.2"/>
+                <circle cx="37" cy="40" r="2" fill="#ff4c4c"/>
+            </svg>`,
+            categorias: ['Carros', 'SUV', 'Peças de veiculo']
+        },
+        {
+            label: 'TRADE ITENS',
+            cor: '#4caf50',
+            corAlpha: 'rgba(76,175,80,0.12)',
+            svgIcon: `<svg class="card-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 18 H40" stroke="#4caf50" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M33 11 L40 18 L33 25" stroke="#4caf50" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M44 34 H12" stroke="#4caf50" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M19 27 L12 34 L19 41" stroke="#4caf50" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>`,
+            categorias: ['TRADE'] // ← altere para o nome entre () nos seus arquivos quando criar as imagens de trade
+        },
+
+        // ── Descomente e ajuste quando adicionar Helicópteros ─────────────
+        // {
+        //     label: 'HELICÓPTEROS',
+        //     cor: '#2196f3',
+        //     corAlpha: 'rgba(33,150,243,0.12)',
+        //     svgIcon: `<svg class="card-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        //         <rect x="4" y="22" width="28" height="11" rx="4" stroke="#2196f3" stroke-width="2.2"/>
+        //         <path d="M32 27.5 H48" stroke="#2196f3" stroke-width="2.2" stroke-linecap="round"/>
+        //         <line x1="4" y1="16" x2="36" y2="16" stroke="#2196f3" stroke-width="2.2" stroke-linecap="round"/>
+        //         <line x1="20" y1="16" x2="20" y2="22" stroke="#2196f3" stroke-width="2" stroke-linecap="round"/>
+        //         <line x1="44" y1="22" x2="44" y2="27" stroke="#2196f3" stroke-width="2" stroke-linecap="round"/>
+        //         <line x1="41" y1="22" x2="47" y2="22" stroke="#2196f3" stroke-width="2" stroke-linecap="round"/>
+        //         <path d="M18 33 L14 42" stroke="#2196f3" stroke-width="2" stroke-linecap="round"/>
+        //     </svg>`,
+        //     categorias: ['Helicopteros'] // ← nome entre () nos arquivos de imagem
+        // }
+    ];
+
+    // Conjunto de categorias que pertencem às seções destaque
+    // (são omitidas do menu de categorias regulares para evitar duplicatas)
+    const CATS_DESTAQUE = new Set(SECOES_DESTAQUE.flatMap(s => s.categorias));
+
+    let bancoDeDados = [];
+
+    // ── Codificação de URL ────────────────────────────────────────────────
+    function encodePath(caminho) {
+        return caminho.replace(/ /g, '%20').replace(/&/g, '%26');
+    }
+
+    // ── Cria <img> com handler de erro ───────────────────────────────────
+    function criarImg(caminho) {
+        const url = encodePath(caminho);
+        const img = document.createElement('img');
+        img.src = url;
+        img.alt = caminho;
+        img.onerror = function () {
+            const msg = document.createElement('p');
+            msg.className = 'erro-img';
+            msg.textContent = '⚠ Não encontrado: ' + url;
+            this.parentNode && this.parentNode.insertBefore(msg, this.nextSibling);
+            this.remove();
+        };
+        return img;
+    }
+
+    // ── Carregamento do JSON ──────────────────────────────────────────────
+    fetch('indice.json')
+        .then(res => res.json())
+        .then(data => {
+            bancoDeDados = data;
+            gerarSescoesDestaque();
+            gerarMenuCategorias();
+        })
+        .catch(err => console.error('Falha ao carregar indice.json:', err));
+
+    // ── Seções Destaque ───────────────────────────────────────────────────
+    function gerarSescoesDestaque() {
+        const container = document.getElementById('featuredContainer');
+        SECOES_DESTAQUE.forEach(secao => {
+            const card = document.createElement('div');
+            card.className = 'card-destaque';
+            card.style.setProperty('--cor', secao.cor);
+            card.style.setProperty('--cor-alpha', secao.corAlpha);
+            card.innerHTML = secao.svgIcon + `<span class="card-label">${secao.label}</span>`;
+            card.onclick = () => mostrarSecaoDestaque(secao);
+            container.appendChild(card);
+        });
+    }
+
+    function mostrarSecaoDestaque(secao) {
+        const subMenu = document.getElementById('menuSubCategorias');
+        subMenu.innerHTML = '';
+        subMenu.style.display = 'block';
+        document.getElementById('busca').value = '';
+        document.getElementById('resultadoImg').innerHTML = '';
+
+        const subs = bancoDeDados.filter(b => {
+            const match = b.imagem.match(/\(([^)]+)\)/);
+            return match && secao.categorias.includes(match[1]);
+        });
+
+        if (subs.length === 0) {
+            subMenu.innerHTML = '<p style="color:#888;font-size:14px;margin:8px 0">Em breve — nenhum item cadastrado ainda.</p>';
+            return;
         }
+        exibirSubBotoes(subs);
+    }
 
-        // ── Cria <img> com handler de erro para depuração ──────────────────
-        function criarImg(caminho) {
-            const url = encodePath(caminho);
-            const img = document.createElement('img');
-            img.src = url;
-            img.alt = caminho;
-            img.onerror = function () {
-                const msg = document.createElement('p');
-                msg.className = 'erro-img';
-                msg.textContent = '⚠ Não encontrado: ' + url;
-                this.parentNode && this.parentNode.insertBefore(msg, this.nextSibling);
-                this.remove();
-            };
-            return img;
-        }
+    // ── 1. BUSCA DIRETA ───────────────────────────────────────────────────
+    function buscarItem() {
+        const texto = document.getElementById('busca').value.toLowerCase();
+        const divImg = document.getElementById('resultadoImg');
+        document.getElementById('menuSubCategorias').style.display = 'none';
 
-        // ── Carregamento do JSON ────────────────────────────────────────────
-        fetch('indice.json')
-            .then(res => res.json())
-            .then(data => {
-                bancoDeDados = data;
-                gerarMenuCategorias();
-            })
-            .catch(err => console.error('Falha ao carregar indice.json:', err));
+        if (texto.length < 2) { divImg.innerHTML = '<p>Digite pelo menos 2 letras...</p>'; return; }
 
-        // ── 1. BUSCA DIRETA ─────────────────────────────────────────────────
-        function buscarItem() {
-            const texto = document.getElementById('busca').value.toLowerCase();
-            const divImg = document.getElementById('resultadoImg');
-            document.getElementById('menuSubCategorias').style.display = 'none';
-
-            if (texto.length < 2) {
-                divImg.innerHTML = '<p>Digite pelo menos 2 letras...</p>';
-                return;
+        const vistos = new Set();
+        const encontrados = [];
+        bancoDeDados.forEach(bloco => {
+            if (!vistos.has(bloco.imagem) && bloco.itens.some(i => i.toLowerCase().includes(texto))) {
+                vistos.add(bloco.imagem);
+                encontrados.push(bloco.imagem);
             }
+        });
 
-            // Caminhos únicos que contêm o item pesquisado
-            const vistos = new Set();
-            const encontrados = [];
-            bancoDeDados.forEach(bloco => {
-                if (!vistos.has(bloco.imagem) &&
-                    bloco.itens.some(i => i.toLowerCase().includes(texto))) {
-                    vistos.add(bloco.imagem);
-                    encontrados.push(bloco.imagem);
-                }
-            });
-
-            divImg.innerHTML = '';
-            if (encontrados.length > 0) {
-                encontrados.forEach(caminho => divImg.appendChild(criarImg(caminho)));
-            } else {
-                divImg.innerHTML = '<p style="color:#ff4c4c">Item não encontrado.</p>';
-            }
+        divImg.innerHTML = '';
+        if (encontrados.length > 0) {
+            encontrados.forEach(c => divImg.appendChild(criarImg(c)));
+        } else {
+            divImg.innerHTML = '<p style="color:#ff4c4c">Item não encontrado.</p>';
         }
+    }
 
-        // ── 2. MENU DE CATEGORIAS ───────────────────────────────────────────
-        // Regex original preservada — não alterar.
-        function gerarMenuCategorias() {
-            const menuCat = document.getElementById('menuCategorias');
-            const categorias = [...new Set(bancoDeDados.map(b => {
-                const match = b.imagem.match(/\(([^)]+)\)/);
-                return match ? match[1] : 'OUTROS';
-            }))];
+    // ── 2. MENU DE CATEGORIAS REGULARES ──────────────────────────────────
+    function gerarMenuCategorias() {
+        const menuCat = document.getElementById('menuCategorias');
+        const categorias = [...new Set(bancoDeDados.map(b => {
+            const match = b.imagem.match(/\(([^)]+)\)/);
+            return match ? match[1] : 'OUTROS';
+        }))];
 
-            categorias.forEach(cat => {
+        categorias
+            .filter(cat => !CATS_DESTAQUE.has(cat)) // omite as de seções destaque
+            .forEach(cat => {
                 const btn = document.createElement('button');
                 btn.className = 'btn-cat';
                 btn.innerText = cat;
                 btn.onclick = () => mostrarSubCategorias(cat);
                 menuCat.appendChild(btn);
             });
-        }
+    }
 
-        // ── 3. SUBCATEGORIAS ────────────────────────────────────────────────
-        // Usa Map (ordem de inserção) + Set (sem caminhos duplicados).
-        // Resolve:
-        //   a) Nomes repetidos  → um único botão por nome
-        //   b) Caminhos iguais  → cada imagem carregada apenas uma vez
-        function mostrarSubCategorias(catPai) {
-            const subMenu = document.getElementById('menuSubCategorias');
-            subMenu.innerHTML = '';
-            subMenu.style.display = 'block';
-            document.getElementById('busca').value = '';
-            document.getElementById('resultadoImg').innerHTML = '';
+    // ── 3. SUBCATEGORIAS (categorias regulares) ───────────────────────────
+    function mostrarSubCategorias(catPai) {
+        const subMenu = document.getElementById('menuSubCategorias');
+        subMenu.innerHTML = '';
+        subMenu.style.display = 'block';
+        document.getElementById('busca').value = '';
+        document.getElementById('resultadoImg').innerHTML = '';
+        exibirSubBotoes(bancoDeDados.filter(b => b.imagem.includes(`(${catPai})`)));
+    }
 
-            const subs = bancoDeDados.filter(b => b.imagem.includes(`(${catPai})`));
+    // ── Função partilhada: gera botões de sub-categoria ───────────────────
+    // Map (ordem de inserção) + Set (caminhos únicos) → 1 botão por nome.
+    function exibirSubBotoes(subs) {
+        const subMenu = document.getElementById('menuSubCategorias');
+        const grupos = new Map();
 
-            // Map  nomeSub  →  Set de caminhos únicos
-            const grupos = new Map();
-            subs.forEach(s => {
-                const nomeSub = s.imagem
-                    .replace(/^img\//, '')   // remove "img/"
-                    .split(' (')[0]          // pega só o nome antes do " ("
-                    .trim();
+        subs.forEach(s => {
+            const nomeSub = s.imagem.replace(/^img\//, '').split(' (')[0].trim();
+            if (!grupos.has(nomeSub)) grupos.set(nomeSub, new Set());
+            grupos.get(nomeSub).add(s.imagem);
+        });
 
-                if (!grupos.has(nomeSub)) grupos.set(nomeSub, new Set());
-                grupos.get(nomeSub).add(s.imagem);
-            });
+        grupos.forEach((imagensSet, nome) => {
+            const imagens = [...imagensSet];
+            const btn = document.createElement('button');
+            btn.className = 'btn-sub';
+            btn.innerText = nome;
+            btn.onclick = () => {
+                const divImg = document.getElementById('resultadoImg');
+                divImg.innerHTML = '';
+                imagens.forEach(c => divImg.appendChild(criarImg(c)));
+            };
+            subMenu.appendChild(btn);
+        });
+    }
 
-            // Um botão por nome único
-            grupos.forEach((imagensSet, nome) => {
-                const imagens = [...imagensSet];
-                const btn = document.createElement('button');
-                btn.className = 'btn-sub';
-                btn.innerText = nome;
-                btn.onclick = () => {
-                    const divImg = document.getElementById('resultadoImg');
-                    divImg.innerHTML = '';
-                    imagens.forEach(caminho => divImg.appendChild(criarImg(caminho)));
-                };
-                subMenu.appendChild(btn);
-            });
-        }
     </script>
 </body>
 </html>
