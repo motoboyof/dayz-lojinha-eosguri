@@ -1,5 +1,557 @@
 [
   {
+    "imagem": "img/Buttstocks (ATTACH) 3.png",
+    "itens": [
+      "Mossberg 590 Plastic Buttstock",
+      "Mossberg 590 Plastic Handle",
+      "Mossberg 590 Wooden Buttstock",
+      "MP5 Fixed Buttstock",
+      "MP5 Wood Buttstock",
+      "Para FAL Buttstock",
+      "PK Folding Buttstock CNC C39",
+      "PK Telescopic Buttstock Zenitco PT-1",
+      "PK Wooden Buttstock",
+      "PRS Gen3 Buttstock",
+      "Retractable MP5 Buttstock",
+      "Rotor 43",
+      "SA-58 Buffer Tube Adapter",
+      "Scar Telescopic Buttstock",
+      "SeriesX SA-58 Buttstock",
+      "SOPMOD M4 Buttstock",
+      "SPR SA-58 Buttstock",
+      "SVD M4 Stock Adapter",
+      "UAS AK Buttstock",
+      "UBR Gen3 Buttstock"
+    ]
+  },
+  {
+    "imagem": "img/Buttstocks (ATTACH) 2.png",
+    "itens": [
+      "Foldable MP5 Buttstock",
+      "G3 Buffertube Adapter",
+      "G3 Collapsable Buttstock",
+      "G3 Polymer Buttstock",
+      "G3 Precision Buttstock",
+      "G3 Wood Buttstock",
+      "G36 Buttstock",
+      "Hera Arms CQR Buttstock",
+      "HK E1 Buttstock",
+      "HK Slim Buttstock",
+      "M16A2 Fixed Buttstock",
+      "Magpul ACS Buttstock",
+      "MCX Collapsible Stock - Open",
+      "MCX Foldable Buffer Tube",
+      "MCX Mini Skeletal Stock",
+      "MCX Skeletal Stock",
+      "MCX Standard Stock",
+      "MCX Visor Stock",
+      "Mossberg 590 Pistol Grip",
+      "Mossberg 590 Plastic Buttstock"
+    ]
+  },
+  {
+    "imagem": "img/Buttstocks (ATTACH) 1.png",
+    "itens": [
+      "9A91 Folding Stock",
+      "ADAR Buttstock",
+      "AK M4 Stock Adapter",
+      "AK12 Buttstocck",
+      "AKS74U Folding Stock",
+      "AS VAL Folding Buttstock",
+      "BRS SA-58 Buttstock",
+      "CMMG RipStock",
+      "Coronha de madeira KA",
+      "Coronha de madeira KA",
+      "Coronha de polímero KA",
+      "Coronha dobrável Vaiga",
+      "Coronha M4-A1 CQB",
+      "Coronha M4-A1 MP",
+      "Coronha retrátil KA",
+      "Coronha telescópica M4-A1",
+      "FAL Polymer Buttstock",
+      "FAL Wooden Buttstock",
+      "FN SCAR Mk20 Buttstock",
+      "FN SCAR VLTOR Stock Tube"
+    ]
+  },
+  {
+    "imagem": "img/Bipods & Grips (ATTACH) 2.png",
+    "itens": [
+      "RIS Vertical Grip Magpul RVG",
+      "RIS Vertical Grip Zenitco RK-1 with B-25U",
+      "RK-0 Foregrip",
+      "RK-6 Foregrip",
+      "SA58 FAB Defense Pistol Grip",
+      "Tango Down Foregrip"
+    ]
+  },
+  {
+    "imagem": "img/Bipods & Grips (ATTACH) 1.png",
+    "itens": [
+      "AK Pistol Grip KGB MG47",
+      "AK Pistol Grip Magpul MOE",
+      "AK Pistol Grip Zenitco RK-3",
+      "AR Pistol Grip Hogue Overmolded",
+      "AR Pistol Grip Magpul MOE",
+      "AR Pistol Skeletonized Grip",
+      "ATLAS V8 Bipod",
+      "CAA G47 Pistol Grip",
+      "DD (Daniel Defense) Pistol Grip",
+      "FAL Para Pistol Grip",
+      "Fortis Shift Foregrip",
+      "Fortis Torque Pistol Grip",
+      "G3 Ergonomic Pistol Grip",
+      "GRAL S Pistol Grip",
+      "Harris Bipod",
+      "Hera Arms CQR Foregrip",
+      "Hexagon Pistol Grip",
+      "KAC Forward Grip",
+      "Magpul Bipod",
+      "RIS Tactical Grip Magpul AFG"
+    ]
+  },
+  {
+    "imagem": "img/Submachine Guns (ARMAS).png",
+    "itens": [
+      "CR-61 Skorpion",
+      "HK MP7A1",
+      "HK MP7A2",
+      "KRISS Vector",
+      "KRISS Vector",
+      "MP5",
+      "P90",
+      "PP-19 Vityaz",
+      "PPSH-41",
+      "RAK-37",
+      "Stechkin APS",
+      "USG-45"
+    ]
+  },
+  {
+    "imagem": "img/Ammunition (MUNIÇÃO) 2.png",
+    "itens": [
+      "Munição .22 LR",
+      "Munição .308 WIN",
+      "Munição .357",
+      "Munição .380 ACP",
+      "Munição 5.45x39mm",
+      "Munição traçante .308 WIN",
+      "Munição traçante 5.45x39mm"
+    ]
+  },
+  {
+    "imagem": "img/Ammunition (MUNIÇÃO) 1.png",
+    "itens": [
+      ".338 Lapua Magnum TAC-X",
+      ".408",
+      ".45 ACP FMJ",
+      "12.7x55mm STs-130",
+      "12.7x99 mm C162 BALL",
+      "12x70 7mm Buckshot",
+      "12x70 Led slug",
+      "4.6x30mm ammo for MP7",
+      "5.56x45 mm M193 Ball",
+      "5.56x45 mm M193 Ball Tracer",
+      "5.7x28 SS190",
+      "6.8x51mm Fury",
+      "7.62x39 mm HP",
+      "7.62x39 mm HP Tracer",
+      "7.62x54R LPS Gzh",
+      "7.62x54R LPS Gzh tracer",
+      "9x19 mm Hollow-Point (JHP)",
+      "9x39 mm 7N12 BP",
+      "9x39 mm SP-5",
+      "Ammo 300 AAC Blackout"
+    ]
+  },
+  {
+    "imagem": "img/Sniper Rifles (ARMAS).png",
+    "itens": [
+      "AWM",
+      "AX MKIII",
+      "Barrett M107",
+      "C14 Timberwolf",
+      "Desert Tech HTI",
+      "Desert Tech SRS A2",
+      "DVL-10",
+      "M200 Intervention",
+      "M24",
+      "M300",
+      "McMillan CS5",
+      "VS-89"
+    ]
+  },
+  {
+    "imagem": "img/Buttstocks (ATTACH) 4.png",
+    "itens": [
+      "Viper Buttstock",
+      "VSK94 Stock",
+      "VSSM Buttstock",
+      "Zenit PT-1 Buttstock",
+      "Zenit PT-3 AK Buttstock",
+      "ZHUKOV-S AK Buttstock"
+    ]
+  },
+  {
+    "imagem": "img/Handguards (ATTACH) 3.png",
+    "itens": [
+      "MCX LCH Handguard",
+      "MCX LT Handguard",
+      "MCX LVAW Handguard",
+      "MCX Virtus Handguard",
+      "MK12 Mod 0 SPR Handguard",
+      "MK16 10 Inch Handguard",
+      "MK16 13 Inch Handguard",
+      "MLOK FAL Handguard",
+      "MLOK HK Handguard",
+      "Mossberg 590 Plastic Forearm",
+      "Mossberg 590 Polymer Forearm",
+      "MP-153 Plastic Forearm",
+      "MP5 RIS Handguard",
+      "MP5 Tropical Handguard",
+      "MP5 Wood Handguard",
+      "PKM RIS Handguard Zenitco B-50",
+      "Plastic M16A2 Handguard",
+      "Polymer AK Handguard",
+      "Polymer FAL Handguard",
+      "RIS FAL Handguard"
+    ]
+  },
+  {
+    "imagem": "img/Handguards (ATTACH) 2.png",
+    "itens": [
+      "G3 Polymer Handguard",
+      "G3 Tactical Handguard",
+      "G3 Wood Handguard",
+      "G36 Long Handguard",
+      "G36 Short Handguard",
+      "Guarda-mão de madeira KA",
+      "Guarda-mão de madeira KA",
+      "Guarda-mão de polímero KA",
+      "Guarda-mão de polímero M4-A1",
+      "Hexagon Railed Dust Cover",
+      "KAC Knights SR15 Handguard",
+      "KAC MLOK Handguard",
+      "KAC SR25 Handguard",
+      "L85 RIS Handguard",
+      "LWRCI MKII AR15 7 Inch Handguard",
+      "LWRCI MKII AR15 9 Inch Handguard",
+      "M16A1 Handguard",
+      "M4 RIS Handguard",
+      "Magpul MOE Carbine Handguard",
+      "MCX Keymod Handguard"
+    ]
+  },
+  {
+    "imagem": "img/Handguards (ATTACH) 1.png",
+    "itens": [
+      "9A-91 Handguard",
+      "ADAR Handguard",
+      "AK B10 Handguard",
+      "AK B10/B19 Handguard",
+      "AK Hexagon Handguard",
+      "AK MOE Handguard",
+      "AK RIS Handguard Zenitco B-30 with B-31",
+      "AK RIS Receiver Cover Zenitco B-33",
+      "AK12 Handguard",
+      "AK74 Dust Cover",
+      "AKS-74U RIS Handguard CAA XRSU",
+      "AKS-74U RIS Handguard Zenitco B-11",
+      "AKS-74U RIS Handguard Zenitco B-11 with E",
+      "AKS-74U Wooden Handguard",
+      "Carbon HK Handguard",
+      "CMMG MK47 Handguard",
+      "Daniel Defense MK18 Handguard",
+      "G28 DMR Handguard",
+      "G28 Patrol Handguard",
+      "G3 Ergonomic Handguard"
+    ]
+  },
+  {
+    "imagem": "img/Flashlights and Lasers (ATTACH).png",
+    "itens": [
+      "AN/PEQ-15",
+      "Lanterna de pistola",
+      "NcSTAR Blue Laser",
+      "Perst-4 LAM",
+      "SureFire Scout Flashlight",
+      "SureFire X300 Flashlight",
+      "Task Flashlight"
+    ]
+  },
+  {
+    "imagem": "img/Compensators (ATTACH) 2.png",
+    "itens": [
+      "MK12 Compensator",
+      "PP19 Muzzle Brake",
+      "QD JK Armament Muzzle Brake",
+      "SA-58 Blast Mitigation Device BMD",
+      "SureFire Compensator",
+      "VP-09 Compensator"
+    ]
+  },
+  {
+    "imagem": "img/Compensators (ATTACH) 1.png",
+    "itens": [
+      "4 Piece AK Compensator",
+      "6P1 Compensator",
+      "6P20 Compensator",
+      "6P26 Compensator",
+      "AAC 2000 Compensator",
+      "AAC SDN Compensator",
+      "AK12 Compensator",
+      "Annihilator Compensator",
+      "Bulletec ST Compensator",
+      "CMB Helical Muzzle Brake",
+      "ColtA2 Compensator",
+      "Compensador Mosin 91/30",
+      "Daniel Defense Wave Compensator",
+      "DTK-1 Compensator",
+      "DTK-2 Compensator",
+      "FAL Compensator",
+      "FNFAL AR Compensator",
+      "FNFAL Pro Compensator",
+      "G28 Compensator",
+      "Lantac Dragon Compensator"
+    ]
+  },
+  {
+    "imagem": "img/Handguards (ATTACH) 4.png",
+    "itens": [
+      "RIS HK Handguard",
+      "Romanian AK Handguard",
+      "RP1 Charging Handle",
+      "RSASS Handguard",
+      "Suppressor Ring",
+      "SVD Chassis MK1 Handguard",
+      "TOZ 6P29 Mount",
+      "VLTOR FAL Handguard",
+      "VSK-94 Handguard",
+      "Zenitco Sport 4"
+    ]
+  },
+  {
+    "imagem": "img/Optics (MIRAS) (ATTACHS) 4.png",
+    "itens": [
+      "Trijicon ACOG",
+      "TS-6X FFP",
+      "UTG 4 Mount for M14",
+      "UTG4 M14 Mount",
+      "Valday PK-122 Optic",
+      "Vortex Razor HD 1-10x",
+      "Vortex UH1"
+    ]
+  },
+  {
+    "imagem": "img/Optics (MIRAS) (ATTACHS) 3.png",
+    "itens": [
+      "Mira telescópica PSO-1",
+      "Mira telescópica PSO-1-1",
+      "Mira telescópica PU",
+      "Mira telescópica Sportpoint",
+      "Mossberg 590 Optic Rail",
+      "Mossberg 590 Rail Shroud",
+      "MP5 Rail Mount",
+      "OKP-7 Optic",
+      "Pilad Red Dot Sight",
+      "PM2 - 1-8x24mm F1",
+      "ra_okp7dovetailoptic",
+      "RMR Sight",
+      "Romeo 1 Sight",
+      "Sig Sauer ROMEO 4T",
+      "Sig Sauer Romeo3 Reflex Sight",
+      "Sig Sauer Tango6 1-6x24mm",
+      "SKS Dove Tail Rail Mount",
+      "Specter Elcan",
+      "Spitfire Prism 3x",
+      "SRS Sight"
+    ]
+  },
+  {
+    "imagem": "img/Optics (MIRAS) (ATTACHS) 2.png",
+    "itens": [
+      "Kobra Red Dot Sight",
+      "Leupold DeltaPoint Sight",
+      "Leupold HAMR Optic",
+      "Leupold Mark 4 6.5-20x50",
+      "Long Range Scope",
+      "M16 Optic Mount",
+      "Minimiras",
+      "Mira Baraka",
+      "Mira com alça de transporte M4-A1",
+      "Mira de combate",
+      "Mira de ferro reserva",
+      "Mira Kobra",
+      "Mira RVN",
+      "Mira telescópica 1PN51",
+      "Mira telescópica ATOG 4x32",
+      "Mira telescópica ATOG 6x48",
+      "Mira telescópica de caça",
+      "Mira telescópica de pistola",
+      "Mira telescópica NV-PVS4",
+      "Mira telescópica P1-87-L"
+    ]
+  },
+  {
+    "imagem": "img/Optics (MIRAS) (ATTACHS) 1.png",
+    "itens": [
+      "1P63",
+      "A2 Rear Iron Sight AR-15",
+      "Aimpoint T2 Optic",
+      "AK Dove Tail Rail Mount",
+      "AKS74u RIS Plank",
+      "AS VAL Rail Mount",
+      "ATACR - 1-8x24mm F1",
+      "Belomo PK-06 reflex sight",
+      "Belomo PK-AS Optic",
+      "Bravo4",
+      "EOTech G33 Magnifier",
+      "Eotech VUDU 1-8",
+      "EOTech XPS3 Holographic Optic",
+      "FNFAL Dust Cover",
+      "FNFAL Upper Picatinny Rail",
+      "G3 Optic Mount",
+      "G36 Carry Handle Optic",
+      "Galil Optic Mount",
+      "Groza OTS-14 Scope",
+      "Holosun HS510C"
+    ]
+  },
+  {
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 6.png",
+    "itens": [
+      "Carregador 8 mun. P1",
+      "Carregador 8 mun. Vaiga",
+      "Carregador 9 mun Descartável para fuzil de assalto KA-M. Armazena atér",
+      "Sig Spear 20 Round Magazine"
+    ]
+  },
+  {
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 5.png",
+    "itens": [
+      "Carregador 20 mun. SVAL",
+      "Carregador 20 mun. tambor Vaiga",
+      "Carregador 25 mun. RAK-37",
+      "Carregador 25 mun. USG-45",
+      "Carregador 30 mun. KA-101",
+      "Carregador 30 mun. KA-74",
+      "Carregador 30 mun. Mag-C",
+      "Carregador 30 mun. padrão",
+      "Carregador 30 mun. polímero KA-M",
+      "Carregador 30 mun. SG5-K",
+      "Carregador 30 mun. Sporter 22",
+      "Carregador 40 mun. Mag-C",
+      "Carregador 45 mun. KA-74",
+      "Carregador 5 mun. CR-527",
+      "Carregador 5 mun. Pioneer",
+      "Carregador 5 mun. SSG 82",
+      "Carregador 5 mun. Vaiga",
+      "Carregador 60 mun. padrão",
+      "Carregador 7 mun. Kolt 1911",
+      "Carregador 75 mun. tambor KA-M"
+    ]
+  },
+  {
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 4.png",
+    "itens": [
+      "60rnd 6L31 AK 5.45 Mag",
+      "60rnd Drum Mag",
+      "71rnd PPSH Drum Magazine",
+      "7rnd M200 Magazine",
+      "7rnd M300 Magazine",
+      "7rnd SRS-A2 Magazine",
+      "8rnd R700 Magazine",
+      "95rnd RPK-16 Drum Magazine",
+      "Carregador 10 mun. CR-550",
+      "Carregador 10 mun. Mag-C",
+      "Carregador 10 mun. MK II",
+      "Carregador 10 mun. VSD",
+      "Carregador 10 mun. VSS",
+      "Carregador 12 mun. IJ-70",
+      "Carregador 15 mun. CR-75",
+      "Carregador 15 mun. FX-45",
+      "Carregador 15 mun. Mlock-91",
+      "Carregador 20 mun. CR-61",
+      "Carregador 20 mun. LAR",
+      "Carregador 20 mun. Mag-C"
+    ]
+  },
+  {
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 3.png",
+    "itens": [
+      "30rnd AK12 Magazine",
+      "30rnd FAL Magazine",
+      "30rnd G3 Magazine",
+      "30rnd KRISS Vector Gen 2 Glock Mag",
+      "30rnd PP-19 Magazine",
+      "30rnd PPSH Magazine",
+      "30rnd SR3M.130 9x39 Mag",
+      "30rnd Waffle MP5 Magazine",
+      "32rnd AA-12 Drum Mag",
+      "33rnd Glock Mag",
+      "35rnd Galil Magazine",
+      "40rnd HK MP7 Magazine",
+      "50rnd KRISS Vector Gen 2 Glock Drum Mag",
+      "50rnd P90 Magazine",
+      "50rnd SGMT Glock Drum Mag",
+      "5rnd M24 Magazine",
+      "5rnd R700 Magazine",
+      "5rnd SRS-A2 Magazine",
+      "5rnd SRS-HTI Magazine",
+      "5rnd SSG-69 Magazine"
+    ]
+  },
+  {
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 2.png",
+    "itens": [
+      "200rnd M249 Ammo Box",
+      "20rnd 308 PMAG",
+      "20rnd 9A91 Magazine",
+      "20rnd APS 20 Magazine",
+      "20rnd ASH12 Magazine",
+      "20rnd Five-Seven Magazine",
+      "20rnd G28 Magazine",
+      "20rnd G3 Magazine",
+      "20rnd Groza-4 Mag",
+      "20rnd HK MP7 Magazine",
+      "20rnd M110 Magazine",
+      "20rnd M14 Magazine",
+      "20rnd Mini14 Magazine",
+      "20rnd MK17 Magazine",
+      "20rnd SA58 Magazine",
+      "20rnd SKS Magazine",
+      "20rnd SVD Mag",
+      "30rnd 300 Blackout PMAG",
+      "30rnd 5.45x39mm PMAG",
+      "30rnd 7.62x39mm PMAG"
+    ]
+  },
+  {
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 1.png",
+    "itens": [
+      "100rnd PK Ammo Box",
+      "10rnd ASH12 Magazine",
+      "10rnd AX MKIII Magazine",
+      "10rnd Dracarys Magazine",
+      "10rnd DVL Magazine",
+      "10rnd FAL Magazine",
+      "10rnd M14 Magazine",
+      "10rnd M82A1 Magazine",
+      "10rnd McMillan CS5 Magazine",
+      "10rnd Mk-3 Kivaari Magazine",
+      "10rnd MK17 Magazine",
+      "10rnd P226 Magazine",
+      "10rnd P320 Polymer Magazine",
+      "10rnd SV-98 Polymer Mag",
+      "10rnd SVT-40 Magazine",
+      "10rnd Vepr12 Magazine",
+      "10rnd VSSK Magazine",
+      "12rnd Fort Magazine",
+      "13rnd KRISS Vector Gen 2 Glock Magazine",
+      "15rnd Beretta Magazine"
+    ]
+  },
+  {
     "imagem": "img/Gloves (LUVAS).png",
     "itens": [
       "Ferro Concepts Gloves",
@@ -941,62 +1493,177 @@
     ]
   },
   {
-    "imagem": "img/Tools (FERRAMENTAS) 1.png",
+    "imagem": "img/Marksman Rifles (ARMAS).png",
     "itens": [
-      "Abridor de lata",
-      "Alicate",
-      "Amaciador de carne",
-      "Anzol de pesca",
-      "Binóculos",
-      "Black Spray Paint",
-      "Bússola",
-      "Bússola de orientação",
-      "Chave de fenda",
-      "Chave de roda",
-      "Chave inglesa",
-      "Clawhammer",
-      "Ding Dong Breaching Hammer",
-      "Face Paint Stick",
-      "Foice",
-      "Forcado",
-      "Green Spray Paint",
-      "Key Tool",
-      "Keycard Case",
-      "Kit de costura"
+      "HK G28",
+      "HK G3",
+      "KAC SR25",
+      "LAR",
+      "M14",
+      "M14 DMR",
+      "Mk 14 EBR",
+      "MK-3 Kivaari",
+      "Remington R11 RSASS",
+      "SA-58",
+      "Scar-20",
+      "Scar-H",
+      "Scar-H",
+      "SIG MCX-SPEAR",
+      "Springfield Armory M1A",
+      "SVCh",
+      "SVT-40",
+      "VSD",
+      "VSSK"
     ]
   },
   {
-    "imagem": "img/Tools (FERRAMENTAS) 2.png",
+    "imagem": "img/LIGHT MACHINE GUNS (ARMAS).png",
     "itens": [
-      "Kit de costura de couro",
-      "Kit de limpeza de arma",
-      "Machadinha",
-      "Machado de bombeiro",
-      "Machado de bombeiro",
-      "Machado divisor",
-      "Marreta",
-      "Martelo",
-      "Maçarico",
-      "Minhoca",
-      "Pedra de amolar",
-      "Picareta",
-      "Pá",
-      "Pá",
-      "Pé de cabra",
-      "Receptor de GPS",
-      "Red Chainsaw",
-      "Serra com arco",
-      "Serrote",
-      "Tan Spray Paint"
+      "M249 SAW",
+      "PKM"
     ]
   },
   {
-    "imagem": "img/Tools (FERRAMENTAS) 3.png",
+    "imagem": "img/Grenades  & Launchers (EXPLOSIVOS) 2.png",
     "itens": [
-      "Vara de pesca",
-      "Vassoura",
-      "White Spray Paint",
-      "Wrist Compass"
+      "RPG-7"
+    ]
+  },
+  {
+    "imagem": "img/Grenades  & Launchers (EXPLOSIVOS) 1.png",
+    "itens": [
+      "Granada de flash 8-M4",
+      "Granada de fragmentação 6-M7",
+      "Granada de fragmentação EGD-5",
+      "Granada de fumaça 1-M8",
+      "Granada de fumaça 1-M8",
+      "Granada de fumaça 1-M8",
+      "Granada de fumaça 1-M8",
+      "Granada de fumaça 1-M8",
+      "Granada de fumaça 40mm",
+      "Granada de fumaça 40mm",
+      "Granada de fumaça 40mm",
+      "Granada de fumaça 40mm",
+      "Granada de fumaça EGD-2",
+      "Granada de fumaça EGD-2",
+      "Granada explosiva 40mm",
+      "Granada PO-X 40mm",
+      "M32 Grenade Launcher",
+      "M79",
+      "Mina terrestre",
+      "RG-6 Grenade Launcher"
+    ]
+  },
+  {
+    "imagem": "img/Assault Rifle (ARMAS) 2.png",
+    "itens": [
+      "MK18",
+      "MK47 Mutant",
+      "OTs-14 Groza-4",
+      "OTs-14 Groza-4 Suppressed",
+      "SA80",
+      "Scar-L",
+      "Scar-L",
+      "SR3-M",
+      "Steyr AUG A3",
+      "SVAL",
+      "VSS"
+    ]
+  },
+  {
+    "imagem": "img/Assault Rifle (ARMAS).png",
+    "itens": [
+      ".308 MDR",
+      "5.56x45 MDR",
+      "9A-91",
+      "AAC HoneyBadger",
+      "AK12",
+      "AR-15",
+      "ASH-12",
+      "G36",
+      "Galil ARM",
+      "HK-416",
+      "KA-101",
+      "KA-74",
+      "KA-M",
+      "KAS-74U",
+      "M16A1",
+      "M16A4",
+      "M4-A1",
+      "MCX",
+      "Mini-14",
+      "MK12"
+    ]
+  },
+  {
+    "imagem": "img/Sidearms (ARMAS).png",
+    "itens": [
+      "CR-75",
+      "Deagle",
+      "Derringer",
+      "FN Five-Seven",
+      "Fort12 Makarov",
+      "FX-45",
+      "GLOCK 18C 9x19 pistol",
+      "IJ-70",
+      "Kolt 1911",
+      "Kolt entalhada 1911",
+      "Longhorn",
+      "M9 Beretta",
+      "MK II",
+      "Mlock-91",
+      "P1",
+      "P226 9x19 pistol",
+      "Revólver",
+      "Sig P320"
+    ]
+  },
+  {
+    "imagem": "img/Shotguns (ARMAS).png",
+    "itens": [
+      "AA-12",
+      "Benelli M4 Shotgun",
+      "BK-133",
+      "BK-43",
+      "BK-43 serrada",
+      "Dracarys Gen-12",
+      "Henry Single Shot",
+      "Model 1887",
+      "Molot Vepr-12",
+      "Mossberg 590",
+      "MP-153",
+      "SPAS-12",
+      "Vaiga"
+    ]
+  },
+  {
+    "imagem": "img/Rifles (ARMAS).png",
+    "itens": [
+      "BK-18",
+      "Blaze",
+      "Carabina de repetição",
+      "CR-527",
+      "CR-550 Savanna",
+      "M70 Tundra",
+      "Mosin 91/30",
+      "OP SKS",
+      "Pioneer",
+      "SK 59/66",
+      "Sporter 22",
+      "SSG 82",
+      "SSG-69"
+    ]
+  },
+  {
+    "imagem": "img/Raid Tools (RAID).png",
+    "itens": [
+      "AH-6 Dumbfire Rocket",
+      "C4 Explosive",
+      "Gunpowder",
+      "Improvised Explosive Charge",
+      "RPG-7 Warhead",
+      "Unidade de detonação remota",
+      "Vehicle Lockpick"
     ]
   },
   {
@@ -1196,558 +1863,6 @@
       "Remington MSR",
       "SV-98",
       "VSSM"
-    ]
-  },
-  {
-    "imagem": "img/Buttstocks (ATTACH) 3.png",
-    "itens": [
-      "Mossberg 590 Plastic Buttstock",
-      "Mossberg 590 Plastic Handle",
-      "Mossberg 590 Wooden Buttstock",
-      "MP5 Fixed Buttstock",
-      "MP5 Wood Buttstock",
-      "Para FAL Buttstock",
-      "PK Folding Buttstock CNC C39",
-      "PK Telescopic Buttstock Zenitco PT-1",
-      "PK Wooden Buttstock",
-      "PRS Gen3 Buttstock",
-      "Retractable MP5 Buttstock",
-      "Rotor 43",
-      "SA-58 Buffer Tube Adapter",
-      "Scar Telescopic Buttstock",
-      "SeriesX SA-58 Buttstock",
-      "SOPMOD M4 Buttstock",
-      "SPR SA-58 Buttstock",
-      "SVD M4 Stock Adapter",
-      "UAS AK Buttstock",
-      "UBR Gen3 Buttstock"
-    ]
-  },
-  {
-    "imagem": "img/Buttstocks (ATTACH) 2.png",
-    "itens": [
-      "Foldable MP5 Buttstock",
-      "G3 Buffertube Adapter",
-      "G3 Collapsable Buttstock",
-      "G3 Polymer Buttstock",
-      "G3 Precision Buttstock",
-      "G3 Wood Buttstock",
-      "G36 Buttstock",
-      "Hera Arms CQR Buttstock",
-      "HK E1 Buttstock",
-      "HK Slim Buttstock",
-      "M16A2 Fixed Buttstock",
-      "Magpul ACS Buttstock",
-      "MCX Collapsible Stock - Open",
-      "MCX Foldable Buffer Tube",
-      "MCX Mini Skeletal Stock",
-      "MCX Skeletal Stock",
-      "MCX Standard Stock",
-      "MCX Visor Stock",
-      "Mossberg 590 Pistol Grip",
-      "Mossberg 590 Plastic Buttstock"
-    ]
-  },
-  {
-    "imagem": "img/Buttstocks (ATTACH) 1.png",
-    "itens": [
-      "9A91 Folding Stock",
-      "ADAR Buttstock",
-      "AK M4 Stock Adapter",
-      "AK12 Buttstocck",
-      "AKS74U Folding Stock",
-      "AS VAL Folding Buttstock",
-      "BRS SA-58 Buttstock",
-      "CMMG RipStock",
-      "Coronha de madeira KA",
-      "Coronha de madeira KA",
-      "Coronha de polímero KA",
-      "Coronha dobrável Vaiga",
-      "Coronha M4-A1 CQB",
-      "Coronha M4-A1 MP",
-      "Coronha retrátil KA",
-      "Coronha telescópica M4-A1",
-      "FAL Polymer Buttstock",
-      "FAL Wooden Buttstock",
-      "FN SCAR Mk20 Buttstock",
-      "FN SCAR VLTOR Stock Tube"
-    ]
-  },
-  {
-    "imagem": "img/Bipods & Grips (ATTACH) 2.png",
-    "itens": [
-      "RIS Vertical Grip Magpul RVG",
-      "RIS Vertical Grip Zenitco RK-1 with B-25U",
-      "RK-0 Foregrip",
-      "RK-6 Foregrip",
-      "SA58 FAB Defense Pistol Grip",
-      "Tango Down Foregrip"
-    ]
-  },
-  {
-    "imagem": "img/Bipods & Grips (ATTACH) 1.png",
-    "itens": [
-      "AK Pistol Grip KGB MG47",
-      "AK Pistol Grip Magpul MOE",
-      "AK Pistol Grip Zenitco RK-3",
-      "AR Pistol Grip Hogue Overmolded",
-      "AR Pistol Grip Magpul MOE",
-      "AR Pistol Skeletonized Grip",
-      "ATLAS V8 Bipod",
-      "CAA G47 Pistol Grip",
-      "DD (Daniel Defense) Pistol Grip",
-      "FAL Para Pistol Grip",
-      "Fortis Shift Foregrip",
-      "Fortis Torque Pistol Grip",
-      "G3 Ergonomic Pistol Grip",
-      "GRAL S Pistol Grip",
-      "Harris Bipod",
-      "Hera Arms CQR Foregrip",
-      "Hexagon Pistol Grip",
-      "KAC Forward Grip",
-      "Magpul Bipod",
-      "RIS Tactical Grip Magpul AFG"
-    ]
-  },
-  {
-    "imagem": "img/Submachine Guns (ARMAS).png",
-    "itens": [
-      "CR-61 Skorpion",
-      "HK MP7A1",
-      "HK MP7A2",
-      "KRISS Vector",
-      "KRISS Vector",
-      "MP5",
-      "P90",
-      "PP-19 Vityaz",
-      "PPSH-41",
-      "RAK-37",
-      "Stechkin APS",
-      "USG-45"
-    ]
-  },
-  {
-    "imagem": "img/Ammunition (MUNIÇÃO) 2.png",
-    "itens": [
-      "Munição .22 LR",
-      "Munição .308 WIN",
-      "Munição .357",
-      "Munição .380 ACP",
-      "Munição 5.45x39mm",
-      "Munição traçante .308 WIN",
-      "Munição traçante 5.45x39mm"
-    ]
-  },
-  {
-    "imagem": "img/Ammunition (MUNIÇÃO) 1.png",
-    "itens": [
-      ".338 Lapua Magnum TAC-X",
-      ".408",
-      ".45 ACP FMJ",
-      "12.7x55mm STs-130",
-      "12.7x99 mm C162 BALL",
-      "12x70 7mm Buckshot",
-      "12x70 Led slug",
-      "4.6x30mm ammo for MP7",
-      "5.56x45 mm M193 Ball",
-      "5.56x45 mm M193 Ball Tracer",
-      "5.7x28 SS190",
-      "6.8x51mm Fury",
-      "7.62x39 mm HP",
-      "7.62x39 mm HP Tracer",
-      "7.62x54R LPS Gzh",
-      "7.62x54R LPS Gzh tracer",
-      "9x19 mm Hollow-Point (JHP)",
-      "9x39 mm 7N12 BP",
-      "9x39 mm SP-5",
-      "Ammo 300 AAC Blackout"
-    ]
-  },
-  {
-    "imagem": "img/Sniper Rifles (ARMAS).png",
-    "itens": [
-      "AWM",
-      "AX MKIII",
-      "Barrett M107",
-      "C14 Timberwolf",
-      "Desert Tech HTI",
-      "Desert Tech SRS A2",
-      "DVL-10",
-      "M200 Intervention",
-      "M24",
-      "M300",
-      "McMillan CS5",
-      "VS-89"
-    ]
-  },
-  {
-    "imagem": "img/Buttstocks (ATTACH) 4.png",
-    "itens": [
-      "Viper Buttstock",
-      "VSK94 Stock",
-      "VSSM Buttstock",
-      "Zenit PT-1 Buttstock",
-      "Zenit PT-3 AK Buttstock",
-      "ZHUKOV-S AK Buttstock"
-    ]
-  },
-  {
-    "imagem": "img/Handguards (ATTACH) 3.png",
-    "itens": [
-      "MCX LCH Handguard",
-      "MCX LT Handguard",
-      "MCX LVAW Handguard",
-      "MCX Virtus Handguard",
-      "MK12 Mod 0 SPR Handguard",
-      "MK16 10 Inch Handguard",
-      "MK16 13 Inch Handguard",
-      "MLOK FAL Handguard",
-      "MLOK HK Handguard",
-      "Mossberg 590 Plastic Forearm",
-      "Mossberg 590 Polymer Forearm",
-      "MP-153 Plastic Forearm",
-      "MP5 RIS Handguard",
-      "MP5 Tropical Handguard",
-      "MP5 Wood Handguard",
-      "PKM RIS Handguard Zenitco B-50",
-      "Plastic M16A2 Handguard",
-      "Polymer AK Handguard",
-      "Polymer FAL Handguard",
-      "RIS FAL Handguard"
-    ]
-  },
-  {
-    "imagem": "img/Handguards (ATTACH) 2.png",
-    "itens": [
-      "G3 Polymer Handguard",
-      "G3 Tactical Handguard",
-      "G3 Wood Handguard",
-      "G36 Long Handguard",
-      "G36 Short Handguard",
-      "Guarda-mão de madeira KA",
-      "Guarda-mão de madeira KA",
-      "Guarda-mão de polímero KA",
-      "Guarda-mão de polímero M4-A1",
-      "Hexagon Railed Dust Cover",
-      "KAC Knights SR15 Handguard",
-      "KAC MLOK Handguard",
-      "KAC SR25 Handguard",
-      "L85 RIS Handguard",
-      "LWRCI MKII AR15 7 Inch Handguard",
-      "LWRCI MKII AR15 9 Inch Handguard",
-      "M16A1 Handguard",
-      "M4 RIS Handguard",
-      "Magpul MOE Carbine Handguard",
-      "MCX Keymod Handguard"
-    ]
-  },
-  {
-    "imagem": "img/Handguards (ATTACH) 1.png",
-    "itens": [
-      "9A-91 Handguard",
-      "ADAR Handguard",
-      "AK B10 Handguard",
-      "AK B10/B19 Handguard",
-      "AK Hexagon Handguard",
-      "AK MOE Handguard",
-      "AK RIS Handguard Zenitco B-30 with B-31",
-      "AK RIS Receiver Cover Zenitco B-33",
-      "AK12 Handguard",
-      "AK74 Dust Cover",
-      "AKS-74U RIS Handguard CAA XRSU",
-      "AKS-74U RIS Handguard Zenitco B-11",
-      "AKS-74U RIS Handguard Zenitco B-11 with E",
-      "AKS-74U Wooden Handguard",
-      "Carbon HK Handguard",
-      "CMMG MK47 Handguard",
-      "Daniel Defense MK18 Handguard",
-      "G28 DMR Handguard",
-      "G28 Patrol Handguard",
-      "G3 Ergonomic Handguard"
-    ]
-  },
-  {
-    "imagem": "img/Flashlights and Lasers (ATTACH).png",
-    "itens": [
-      "AN/PEQ-15",
-      "Lanterna de pistola",
-      "NcSTAR Blue Laser",
-      "Perst-4 LAM",
-      "SureFire Scout Flashlight",
-      "SureFire X300 Flashlight",
-      "Task Flashlight"
-    ]
-  },
-  {
-    "imagem": "img/Compensators (ATTACH) 2.png",
-    "itens": [
-      "MK12 Compensator",
-      "PP19 Muzzle Brake",
-      "QD JK Armament Muzzle Brake",
-      "SA-58 Blast Mitigation Device BMD",
-      "SureFire Compensator",
-      "VP-09 Compensator"
-    ]
-  },
-  {
-    "imagem": "img/Compensators (ATTACH) 1.png",
-    "itens": [
-      "4 Piece AK Compensator",
-      "6P1 Compensator",
-      "6P20 Compensator",
-      "6P26 Compensator",
-      "AAC 2000 Compensator",
-      "AAC SDN Compensator",
-      "AK12 Compensator",
-      "Annihilator Compensator",
-      "Bulletec ST Compensator",
-      "CMB Helical Muzzle Brake",
-      "ColtA2 Compensator",
-      "Compensador Mosin 91/30",
-      "Daniel Defense Wave Compensator",
-      "DTK-1 Compensator",
-      "DTK-2 Compensator",
-      "FAL Compensator",
-      "FNFAL AR Compensator",
-      "FNFAL Pro Compensator",
-      "G28 Compensator",
-      "Lantac Dragon Compensator"
-    ]
-  },
-  {
-    "imagem": "img/Handguards (ATTACH) 4.png",
-    "itens": [
-      "RIS HK Handguard",
-      "Romanian AK Handguard",
-      "RP1 Charging Handle",
-      "RSASS Handguard",
-      "Suppressor Ring",
-      "SVD Chassis MK1 Handguard",
-      "TOZ 6P29 Mount",
-      "VLTOR FAL Handguard",
-      "VSK-94 Handguard",
-      "Zenitco Sport 4"
-    ]
-  },
-  {
-    "imagem": "img/Optics (MIRAS) (ATTACHS) 4.png",
-    "itens": [
-      "Trijicon ACOG",
-      "TS-6X FFP",
-      "UTG 4 Mount for M14",
-      "UTG4 M14 Mount",
-      "Valday PK-122 Optic",
-      "Vortex Razor HD 1-10x",
-      "Vortex UH1"
-    ]
-  },
-  {
-    "imagem": "img/Optics (MIRAS) (ATTACHS) 3.png",
-    "itens": [
-      "Mira telescópica PSO-1",
-      "Mira telescópica PSO-1-1",
-      "Mira telescópica PU",
-      "Mira telescópica Sportpoint",
-      "Mossberg 590 Optic Rail",
-      "Mossberg 590 Rail Shroud",
-      "MP5 Rail Mount",
-      "OKP-7 Optic",
-      "Pilad Red Dot Sight",
-      "PM2 - 1-8x24mm F1",
-      "ra_okp7dovetailoptic",
-      "RMR Sight",
-      "Romeo 1 Sight",
-      "Sig Sauer ROMEO 4T",
-      "Sig Sauer Romeo3 Reflex Sight",
-      "Sig Sauer Tango6 1-6x24mm",
-      "SKS Dove Tail Rail Mount",
-      "Specter Elcan",
-      "Spitfire Prism 3x",
-      "SRS Sight"
-    ]
-  },
-  {
-    "imagem": "img/Optics (MIRAS) (ATTACHS) 2.png",
-    "itens": [
-      "Kobra Red Dot Sight",
-      "Leupold DeltaPoint Sight",
-      "Leupold HAMR Optic",
-      "Leupold Mark 4 6.5-20x50",
-      "Long Range Scope",
-      "M16 Optic Mount",
-      "Minimiras",
-      "Mira Baraka",
-      "Mira com alça de transporte M4-A1",
-      "Mira de combate",
-      "Mira de ferro reserva",
-      "Mira Kobra",
-      "Mira RVN",
-      "Mira telescópica 1PN51",
-      "Mira telescópica ATOG 4x32",
-      "Mira telescópica ATOG 6x48",
-      "Mira telescópica de caça",
-      "Mira telescópica de pistola",
-      "Mira telescópica NV-PVS4",
-      "Mira telescópica P1-87-L"
-    ]
-  },
-  {
-    "imagem": "img/Optics (MIRAS) (ATTACHS) 1.png",
-    "itens": [
-      "1P63",
-      "A2 Rear Iron Sight AR-15",
-      "Aimpoint T2 Optic",
-      "AK Dove Tail Rail Mount",
-      "AKS74u RIS Plank",
-      "AS VAL Rail Mount",
-      "ATACR - 1-8x24mm F1",
-      "Belomo PK-06 reflex sight",
-      "Belomo PK-AS Optic",
-      "Bravo4",
-      "EOTech G33 Magnifier",
-      "Eotech VUDU 1-8",
-      "EOTech XPS3 Holographic Optic",
-      "FNFAL Dust Cover",
-      "FNFAL Upper Picatinny Rail",
-      "G3 Optic Mount",
-      "G36 Carry Handle Optic",
-      "Galil Optic Mount",
-      "Groza OTS-14 Scope",
-      "Holosun HS510C"
-    ]
-  },
-  {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 6.png",
-    "itens": [
-      "Carregador 8 mun. P1",
-      "Carregador 8 mun. Vaiga",
-      "Carregador 9 mun Descartável para fuzil de assalto KA-M. Armazena atér",
-      "Sig Spear 20 Round Magazine"
-    ]
-  },
-  {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 5.png",
-    "itens": [
-      "Carregador 20 mun. SVAL",
-      "Carregador 20 mun. tambor Vaiga",
-      "Carregador 25 mun. RAK-37",
-      "Carregador 25 mun. USG-45",
-      "Carregador 30 mun. KA-101",
-      "Carregador 30 mun. KA-74",
-      "Carregador 30 mun. Mag-C",
-      "Carregador 30 mun. padrão",
-      "Carregador 30 mun. polímero KA-M",
-      "Carregador 30 mun. SG5-K",
-      "Carregador 30 mun. Sporter 22",
-      "Carregador 40 mun. Mag-C",
-      "Carregador 45 mun. KA-74",
-      "Carregador 5 mun. CR-527",
-      "Carregador 5 mun. Pioneer",
-      "Carregador 5 mun. SSG 82",
-      "Carregador 5 mun. Vaiga",
-      "Carregador 60 mun. padrão",
-      "Carregador 7 mun. Kolt 1911",
-      "Carregador 75 mun. tambor KA-M"
-    ]
-  },
-  {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 4.png",
-    "itens": [
-      "60rnd 6L31 AK 5.45 Mag",
-      "60rnd Drum Mag",
-      "71rnd PPSH Drum Magazine",
-      "7rnd M200 Magazine",
-      "7rnd M300 Magazine",
-      "7rnd SRS-A2 Magazine",
-      "8rnd R700 Magazine",
-      "95rnd RPK-16 Drum Magazine",
-      "Carregador 10 mun. CR-550",
-      "Carregador 10 mun. Mag-C",
-      "Carregador 10 mun. MK II",
-      "Carregador 10 mun. VSD",
-      "Carregador 10 mun. VSS",
-      "Carregador 12 mun. IJ-70",
-      "Carregador 15 mun. CR-75",
-      "Carregador 15 mun. FX-45",
-      "Carregador 15 mun. Mlock-91",
-      "Carregador 20 mun. CR-61",
-      "Carregador 20 mun. LAR",
-      "Carregador 20 mun. Mag-C"
-    ]
-  },
-  {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 3.png",
-    "itens": [
-      "30rnd AK12 Magazine",
-      "30rnd FAL Magazine",
-      "30rnd G3 Magazine",
-      "30rnd KRISS Vector Gen 2 Glock Mag",
-      "30rnd PP-19 Magazine",
-      "30rnd PPSH Magazine",
-      "30rnd SR3M.130 9x39 Mag",
-      "30rnd Waffle MP5 Magazine",
-      "32rnd AA-12 Drum Mag",
-      "33rnd Glock Mag",
-      "35rnd Galil Magazine",
-      "40rnd HK MP7 Magazine",
-      "50rnd KRISS Vector Gen 2 Glock Drum Mag",
-      "50rnd P90 Magazine",
-      "50rnd SGMT Glock Drum Mag",
-      "5rnd M24 Magazine",
-      "5rnd R700 Magazine",
-      "5rnd SRS-A2 Magazine",
-      "5rnd SRS-HTI Magazine",
-      "5rnd SSG-69 Magazine"
-    ]
-  },
-  {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 2.png",
-    "itens": [
-      "200rnd M249 Ammo Box",
-      "20rnd 308 PMAG",
-      "20rnd 9A91 Magazine",
-      "20rnd APS 20 Magazine",
-      "20rnd ASH12 Magazine",
-      "20rnd Five-Seven Magazine",
-      "20rnd G28 Magazine",
-      "20rnd G3 Magazine",
-      "20rnd Groza-4 Mag",
-      "20rnd HK MP7 Magazine",
-      "20rnd M110 Magazine",
-      "20rnd M14 Magazine",
-      "20rnd Mini14 Magazine",
-      "20rnd MK17 Magazine",
-      "20rnd SA58 Magazine",
-      "20rnd SKS Magazine",
-      "20rnd SVD Mag",
-      "30rnd 300 Blackout PMAG",
-      "30rnd 5.45x39mm PMAG",
-      "30rnd 7.62x39mm PMAG"
-    ]
-  },
-  {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 1.png",
-    "itens": [
-      "100rnd PK Ammo Box",
-      "10rnd ASH12 Magazine",
-      "10rnd AX MKIII Magazine",
-      "10rnd Dracarys Magazine",
-      "10rnd DVL Magazine",
-      "10rnd FAL Magazine",
-      "10rnd M14 Magazine",
-      "10rnd M82A1 Magazine",
-      "10rnd McMillan CS5 Magazine",
-      "10rnd Mk-3 Kivaari Magazine",
-      "10rnd MK17 Magazine",
-      "10rnd P226 Magazine",
-      "10rnd P320 Polymer Magazine",
-      "10rnd SV-98 Polymer Mag",
-      "10rnd SVT-40 Magazine",
-      "10rnd Vepr12 Magazine",
-      "10rnd VSSK Magazine",
-      "12rnd Fort Magazine",
-      "13rnd KRISS Vector Gen 2 Glock Magazine",
-      "15rnd Beretta Magazine"
     ]
   }
 ]
