@@ -1,6 +1,6 @@
 [
   {
-    "imagem": "img/Gloves (LUVAS).jpg",
+    "imagem": "img/Gloves (LUVAS).png",
     "itens": [
       "Ferro Concepts Gloves",
       "Fingerless gloves Black",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "imagem": "img/Glasses E NVGs (OCULOS).jpg",
+    "imagem": "img/Glasses E NVGs (OCULOS).png",
     "itens": [
       "6B50 Ratnik Goggles",
       "AN/PVS-14 MNVD",
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "imagem": "img/Ghillie.jpg",
+    "imagem": "img/Ghillie.png",
     "itens": [
       "Black Ghillie Suit",
       "Black Ghillie Suit",
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "imagem": "img/Civilian Helmets (CAPACETES).jpg",
+    "imagem": "img/Civilian Helmets (CAPACETES).png",
     "itens": [
       "Capacete de bombeiro",
       "Capacete de construção",
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "imagem": "img/Belts (CINTO).jpg",
+    "imagem": "img/Belts (CINTO).png",
     "itens": [
       "Cinto",
       "Cinto tático",
@@ -81,7 +81,7 @@
     ]
   },
   {
-    "imagem": "img/Bags (MOCHILAS) 2.jpg",
+    "imagem": "img/Bags (MOCHILAS) 2.png",
     "itens": [
       "Mochila escolar",
       "Mochila Impermeável",
@@ -99,7 +99,7 @@
     ]
   },
   {
-    "imagem": "img/Bags (MOCHILAS).jpg",
+    "imagem": "img/Bags (MOCHILAS).png",
     "itens": [
       "5.11 TACTICAL RUSH MOAB 10 - Black",
       "6SH118 raid backpack",
@@ -124,7 +124,7 @@
     ]
   },
   {
-    "imagem": "img/Armbands.jpg",
+    "imagem": "img/Armbands.png",
     "itens": [
       "Braçadeira",
       "Braçadeira"
@@ -137,7 +137,7 @@
     ]
   },
   {
-    "imagem": "img/Supressors (ATTACHS).jpg",
+    "imagem": "img/Supressors (ATTACHS).png",
     "itens": [
       ".408 Suppressor",
       "50 BMG Suppressor",
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "imagem": "img/Pants (CALÇAS) 2.jpg",
+    "imagem": "img/Pants (CALÇAS) 2.png",
     "itens": [
       "Cargo Joggers",
       "Crye G3 Combat Pants - Ranger Green",
@@ -184,7 +184,7 @@
     ]
   },
   {
-    "imagem": "img/Pants (CALÇAS) 1.jpg",
+    "imagem": "img/Pants (CALÇAS) 1.png",
     "itens": [
       "6sh122 Pants",
       "AV Tactical Pants",
@@ -209,7 +209,7 @@
     ]
   },
   {
-    "imagem": "img/Militarys Helmets (CAPACETES) 2.jpg",
+    "imagem": "img/Militarys Helmets (CAPACETES) 2.png",
     "itens": [
       "LSZH Helmet",
       "Maska 1Sch face shield",
@@ -228,7 +228,7 @@
     ]
   },
   {
-    "imagem": "img/Militarys Helmets (CAPACETES) 1.jpg",
+    "imagem": "img/Militarys Helmets (CAPACETES) 1.png",
     "itens": [
       "6B47 Cover",
       "6B47 Helmet",
@@ -253,7 +253,7 @@
     ]
   },
   {
-    "imagem": "img/Masks (MASCARAS) 2.jpg",
+    "imagem": "img/Masks (MASCARAS) 2.png",
     "itens": [
       "Máscara de solda",
       "OPS SOTR Gas Mask",
@@ -266,7 +266,7 @@
     ]
   },
   {
-    "imagem": "img/Masks (MASCARAS) 1.jpg",
+    "imagem": "img/Masks (MASCARAS) 1.png",
     "itens": [
       "Balaclava",
       "Ballistic Mask",
@@ -291,7 +291,7 @@
     ]
   },
   {
-    "imagem": "img/Holsters & Pouches (BAG DO COLETE) 2.jpg",
+    "imagem": "img/Holsters & Pouches (BAG DO COLETE) 2.png",
     "itens": [
       "Spiritus Admin Pouch",
       "Spiritus Pouch",
@@ -303,7 +303,7 @@
     ]
   },
   {
-    "imagem": "img/Holsters & Pouches (BAG DO COLETE) 1.jpg",
+    "imagem": "img/Holsters & Pouches (BAG DO COLETE) 1.png",
     "itens": [
       "6304 Holster",
       "6354 Holster",
@@ -328,7 +328,7 @@
     ]
   },
   {
-    "imagem": "img/Hats & Hoods (CHAPEU) 2.jpg",
+    "imagem": "img/Hats & Hoods (CHAPEU) 2.png",
     "itens": [
       "Quepe de polícia",
       "ra_cap_grey",
@@ -350,7 +350,7 @@
     ]
   },
   {
-    "imagem": "img/Hats & Hoods (CHAPEU) 1.jpg",
+    "imagem": "img/Hats & Hoods (CHAPEU) 1.png",
     "itens": [
       "Boina",
       "Boina militar",
@@ -375,7 +375,7 @@
     ]
   },
   {
-    "imagem": "img/Vests (COLETE) 2.jpg",
+    "imagem": "img/Vests (COLETE) 2.png",
     "itens": [
       "TBAS Plate Carrier",
       "THOR NFM Plate Carrier",
@@ -383,7 +383,7 @@
     ]
   },
   {
-    "imagem": "img/Vests (COLETE) 1.jpg",
+    "imagem": "img/Vests (COLETE) 1.png",
     "itens": [
       "6B13 Body Armor",
       "6B23 Body Armor",
@@ -408,7 +408,7 @@
     ]
   },
   {
-    "imagem": "img/Tops (CAMISA) 4.jpg",
+    "imagem": "img/Tops (CAMISA) 4.png",
     "itens": [
       "Suéter militar",
       "Suéter militar",
@@ -425,7 +425,7 @@
     ]
   },
   {
-    "imagem": "img/Tops (CAMISA) 3.jpg",
+    "imagem": "img/Tops (CAMISA) 3.png",
     "itens": [
       "Jaqueta de trilha",
       "Jaqueta jeans",
@@ -450,7 +450,7 @@
     ]
   },
   {
-    "imagem": "img/Tops (CAMISA) 2.jpg",
+    "imagem": "img/Tops (CAMISA) 2.png",
     "itens": [
       "Fancy Parka",
       "FORT Voin Suit",
@@ -475,7 +475,7 @@
     ]
   },
   {
-    "imagem": "img/Tops (CAMISA) 1.jpg",
+    "imagem": "img/Tops (CAMISA) 1.png",
     "itens": [
       "6sh122 Jacket",
       "Arcteryx Gryphon Jacket",
@@ -500,7 +500,7 @@
     ]
   },
   {
-    "imagem": "img/Shoes & Boots (SAPATOS) 2.jpg",
+    "imagem": "img/Shoes & Boots (SAPATOS) 2.png",
     "itens": [
       "Slides",
       "Sport Shoes",
@@ -514,7 +514,7 @@
     ]
   },
   {
-    "imagem": "img/Shoes & Boots (SAPATOS) 1.jpg",
+    "imagem": "img/Shoes & Boots (SAPATOS) 1.png",
     "itens": [
       "Adidas Yeezy 350 V2",
       "Botas de assalto",
@@ -545,7 +545,7 @@
     ]
   },
   {
-    "imagem": "img/Patches (BANDEIRAS) 1.jpg",
+    "imagem": "img/Patches (BANDEIRAS) 1.png",
     "itens": [
       "Patch",
       "Patch",
@@ -570,7 +570,7 @@
     ]
   },
   {
-    "imagem": "img/Pelts (Pele).jpg",
+    "imagem": "img/Pelts (Pele).png",
     "itens": [
       "Pele de cabra",
       "Pele de cervo",
@@ -586,7 +586,7 @@
     ]
   },
   {
-    "imagem": "img/Package Food (Comida) 2.jpg",
+    "imagem": "img/Package Food (Comida) 2.png",
     "itens": [
       "Patê de fígado",
       "Patê suíno",
@@ -600,7 +600,7 @@
     ]
   },
   {
-    "imagem": "img/Package Food (Comida) 1.jpg",
+    "imagem": "img/Package Food (Comida) 1.png",
     "itens": [
       "Arroz",
       "Atum enlatado",
@@ -625,7 +625,7 @@
     ]
   },
   {
-    "imagem": "img/Medical (AIFAK) 2.jpg",
+    "imagem": "img/Medical (AIFAK) 2.png",
     "itens": [
       "IFAK",
       "Kit de coleta de sangue",
@@ -643,7 +643,7 @@
     ]
   },
   {
-    "imagem": "img/Medical (AIFAK) 1.jpg",
+    "imagem": "img/Medical (AIFAK) 1.png",
     "itens": [
       "Adrenaline",
       "AFAK",
@@ -668,7 +668,7 @@
     ]
   },
   {
-    "imagem": "img/Meat (CARNE).jpg",
+    "imagem": "img/Meat (CARNE).png",
     "itens": [
       "Bife de cabra",
       "Bife de carneiro",
@@ -687,7 +687,7 @@
     ]
   },
   {
-    "imagem": "img/Drinks and Canteens (REFRI E CANTIL) 1.jpg",
+    "imagem": "img/Drinks and Canteens (REFRI E CANTIL) 1.png",
     "itens": [
       "Cantil",
       "Coca Cola Zero",
@@ -706,7 +706,7 @@
     ]
   },
   {
-    "imagem": "img/Barter Items (PRA VENDER) 2.jpg",
+    "imagem": "img/Barter Items (PRA VENDER) 2.png",
     "itens": [
       "Identification Card",
       "Intelligence Folder",
@@ -730,7 +730,7 @@
     ]
   },
   {
-    "imagem": "img/Barter Items (PRA VENDER) 1.jpg",
+    "imagem": "img/Barter Items (PRA VENDER) 1.png",
     "itens": [
       "0.1 BTC",
       "Airduster",
@@ -755,7 +755,7 @@
     ]
   },
   {
-    "imagem": "img/Helicopters Parts (PARTES DO HELI) 1.jpg",
+    "imagem": "img/Helicopters Parts (PARTES DO HELI) 1.png",
     "itens": [
       "AW159 Back Wheel",
       "AW159 Front Wheel",
@@ -780,7 +780,7 @@
     ]
   },
   {
-    "imagem": "img/Camping Supplies (DIVERSOS) 3.jpg",
+    "imagem": "img/Camping Supplies (DIVERSOS) 3.png",
     "itens": [
       "STR_NaZare",
       "Telêmetro",
@@ -791,7 +791,7 @@
     ]
   },
   {
-    "imagem": "img/Camping Supplies (DIVERSOS) 2.jpg",
+    "imagem": "img/Camping Supplies (DIVERSOS) 2.png",
     "itens": [
       "Kit de reparo elétrico",
       "Lanterna",
@@ -816,7 +816,7 @@
     ]
   },
   {
-    "imagem": "img/Camping Supplies (DIVERSOS) 1.jpg",
+    "imagem": "img/Camping Supplies (DIVERSOS) 1.png",
     "itens": [
       "Algemas",
       "Armadilha de urso",
@@ -841,7 +841,7 @@
     ]
   },
   {
-    "imagem": "img/Base Supplies e Storage (COISAS DE BASE) 2.jpg",
+    "imagem": "img/Base Supplies e Storage (COISAS DE BASE) 2.png",
     "itens": [
       "Military Locker Green Kit",
       "Red Single Locker Kit",
@@ -863,7 +863,7 @@
     ]
   },
   {
-    "imagem": "img/Base Supplies e Storage (COISAS DE BASE) 1.jpg",
+    "imagem": "img/Base Supplies e Storage (COISAS DE BASE) 1.png",
     "itens": [
       "Arame farpado",
       "Bandeira",
@@ -888,13 +888,13 @@
     ]
   },
   {
-    "imagem": "img/Music (RADIO).jpg",
+    "imagem": "img/Music (RADIO).png",
     "itens": [
       "Radio"
     ]
   },
   {
-    "imagem": "img/Melee (FACA) 1.jpg",
+    "imagem": "img/Melee (FACA) 1.png",
     "itens": [
       "Baioneta KA",
       "Baioneta M4-A1",
@@ -918,7 +918,7 @@
     ]
   },
   {
-    "imagem": "img/Helicopters Parts (PARTES DO HELI) 2.jpg",
+    "imagem": "img/Helicopters Parts (PARTES DO HELI) 2.png",
     "itens": [
       "MI 24 Door",
       "MI 24 Door",
@@ -941,7 +941,7 @@
     ]
   },
   {
-    "imagem": "img/Tools (FERRAMENTAS) 1.jpg",
+    "imagem": "img/Tools (FERRAMENTAS) 1.png",
     "itens": [
       "Abridor de lata",
       "Alicate",
@@ -966,7 +966,7 @@
     ]
   },
   {
-    "imagem": "img/Tools (FERRAMENTAS) 2.jpg",
+    "imagem": "img/Tools (FERRAMENTAS) 2.png",
     "itens": [
       "Kit de costura de couro",
       "Kit de limpeza de arma",
@@ -1000,7 +1000,7 @@
     ]
   },
   {
-    "imagem": "img/Buttstocks (ATTACH) 4.jpg",
+    "imagem": "img/Buttstocks (ATTACH) 4.png",
     "itens": [
       "Mosin M4 Adapter",
       "PP-19-01 Vityaz PT-1 buttstock",
@@ -1012,7 +1012,7 @@
     ]
   },
   {
-    "imagem": "img/Buttstocks (ATTACH) 3.jpg",
+    "imagem": "img/Buttstocks (ATTACH) 3.png",
     "itens": [
       "CQR buttstock",
       "Fab Defense GL-CORE buttstock",
@@ -1033,7 +1033,7 @@
     ]
   },
   {
-    "imagem": "img/Buttstocks (ATTACH) 2.jpg",
+    "imagem": "img/Buttstocks (ATTACH) 2.png",
     "itens": [
       "AK-74 buttstock",
       "AK-74 polymer buttstock",
@@ -1054,7 +1054,7 @@
     ]
   },
   {
-    "imagem": "img/Buttstocks (ATTACH) 1.jpg",
+    "imagem": "img/Buttstocks (ATTACH) 1.png",
     "itens": [
       "Coronha de polímero de SG5-K",
       "Coronha dobrável de AK",
@@ -1075,7 +1075,7 @@
     ]
   },
   {
-    "imagem": "img/Bipods & Grips (ATTACH) 2.jpg",
+    "imagem": "img/Bipods & Grips (ATTACH) 2.png",
     "itens": [
       "Bipé para armas",
       "CQR front grip",
@@ -1096,7 +1096,7 @@
     ]
   },
   {
-    "imagem": "img/Bipods & Grips (ATTACH) 1.jpg",
+    "imagem": "img/Bipods & Grips (ATTACH) 1.png",
     "itens": [
       "AK12 pistol grip",
       "AK74 pistol grip",
@@ -1118,7 +1118,7 @@
     ]
   },
   {
-    "imagem": "img/Submachine Guns (ARMAS).jpg",
+    "imagem": "img/Submachine Guns (ARMAS).png",
     "itens": [
       "Bizon",
       "FN P90",
@@ -1138,7 +1138,7 @@
     ]
   },
   {
-    "imagem": "img/Ammunition (MUNIÇÃO) 2.jpg",
+    "imagem": "img/Ammunition (MUNIÇÃO) 2.png",
     "itens": [
       "Caixa de munição de M4A1",
       "Caixa de munição para SVD",
@@ -1161,7 +1161,7 @@
     ]
   },
   {
-    "imagem": "img/Ammunition (MUNIÇÃO) 1.jpg",
+    "imagem": "img/Ammunition (MUNIÇÃO) 1.png",
     "itens": [
       "Caixa com projéteis de 12ga de chumbo grosso",
       "Caixa de .338 Lapua Magnum",
@@ -1181,7 +1181,7 @@
     ]
   },
   {
-    "imagem": "img/Sniper Rifles (ARMAS).jpg",
+    "imagem": "img/Sniper Rifles (ARMAS).png",
     "itens": [
       "AWP",
       "Barret M82A1",
@@ -1199,7 +1199,7 @@
     ]
   },
   {
-    "imagem": "img/Buttstocks (ATTACH) 3.jpg",
+    "imagem": "img/Buttstocks (ATTACH) 3.png",
     "itens": [
       "Mossberg 590 Plastic Buttstock",
       "Mossberg 590 Plastic Handle",
@@ -1224,7 +1224,7 @@
     ]
   },
   {
-    "imagem": "img/Buttstocks (ATTACH) 2.jpg",
+    "imagem": "img/Buttstocks (ATTACH) 2.png",
     "itens": [
       "Foldable MP5 Buttstock",
       "G3 Buffertube Adapter",
@@ -1249,7 +1249,7 @@
     ]
   },
   {
-    "imagem": "img/Buttstocks (ATTACH) 1.jpg",
+    "imagem": "img/Buttstocks (ATTACH) 1.png",
     "itens": [
       "9A91 Folding Stock",
       "ADAR Buttstock",
@@ -1274,7 +1274,7 @@
     ]
   },
   {
-    "imagem": "img/Bipods & Grips (ATTACH) 2.jpg",
+    "imagem": "img/Bipods & Grips (ATTACH) 2.png",
     "itens": [
       "RIS Vertical Grip Magpul RVG",
       "RIS Vertical Grip Zenitco RK-1 with B-25U",
@@ -1285,7 +1285,7 @@
     ]
   },
   {
-    "imagem": "img/Bipods & Grips (ATTACH) 1.jpg",
+    "imagem": "img/Bipods & Grips (ATTACH) 1.png",
     "itens": [
       "AK Pistol Grip KGB MG47",
       "AK Pistol Grip Magpul MOE",
@@ -1310,7 +1310,7 @@
     ]
   },
   {
-    "imagem": "img/Submachine Guns (ARMAS).jpg",
+    "imagem": "img/Submachine Guns (ARMAS).png",
     "itens": [
       "CR-61 Skorpion",
       "HK MP7A1",
@@ -1327,7 +1327,7 @@
     ]
   },
   {
-    "imagem": "img/Ammunition (MUNIÇÃO) 2.jpg",
+    "imagem": "img/Ammunition (MUNIÇÃO) 2.png",
     "itens": [
       "Munição .22 LR",
       "Munição .308 WIN",
@@ -1339,7 +1339,7 @@
     ]
   },
   {
-    "imagem": "img/Ammunition (MUNIÇÃO) 1.jpg",
+    "imagem": "img/Ammunition (MUNIÇÃO) 1.png",
     "itens": [
       ".338 Lapua Magnum TAC-X",
       ".408",
@@ -1364,7 +1364,7 @@
     ]
   },
   {
-    "imagem": "img/Sniper Rifles (ARMAS).jpg",
+    "imagem": "img/Sniper Rifles (ARMAS).png",
     "itens": [
       "AWM",
       "AX MKIII",
@@ -1381,7 +1381,7 @@
     ]
   },
   {
-    "imagem": "img/Buttstocks (ATTACH) 4.jpg",
+    "imagem": "img/Buttstocks (ATTACH) 4.png",
     "itens": [
       "Viper Buttstock",
       "VSK94 Stock",
@@ -1392,7 +1392,7 @@
     ]
   },
   {
-    "imagem": "img/Handguards (ATTACH) 3.jpg",
+    "imagem": "img/Handguards (ATTACH) 3.png",
     "itens": [
       "MCX LCH Handguard",
       "MCX LT Handguard",
@@ -1417,7 +1417,7 @@
     ]
   },
   {
-    "imagem": "img/Handguards (ATTACH) 2.jpg",
+    "imagem": "img/Handguards (ATTACH) 2.png",
     "itens": [
       "G3 Polymer Handguard",
       "G3 Tactical Handguard",
@@ -1442,7 +1442,7 @@
     ]
   },
   {
-    "imagem": "img/Handguards (ATTACH) 1.jpg",
+    "imagem": "img/Handguards (ATTACH) 1.png",
     "itens": [
       "9A-91 Handguard",
       "ADAR Handguard",
@@ -1467,7 +1467,7 @@
     ]
   },
   {
-    "imagem": "img/Flashlights and Lasers (ATTACH).jpg",
+    "imagem": "img/Flashlights and Lasers (ATTACH).png",
     "itens": [
       "AN/PEQ-15",
       "Lanterna de pistola",
@@ -1479,7 +1479,7 @@
     ]
   },
   {
-    "imagem": "img/Compensators (ATTACH) 2.jpg",
+    "imagem": "img/Compensators (ATTACH) 2.png",
     "itens": [
       "MK12 Compensator",
       "PP19 Muzzle Brake",
@@ -1490,7 +1490,7 @@
     ]
   },
   {
-    "imagem": "img/Compensators (ATTACH) 1.jpg",
+    "imagem": "img/Compensators (ATTACH) 1.png",
     "itens": [
       "4 Piece AK Compensator",
       "6P1 Compensator",
@@ -1515,7 +1515,7 @@
     ]
   },
   {
-    "imagem": "img/Handguards (ATTACH) 4.jpg",
+    "imagem": "img/Handguards (ATTACH) 4.png",
     "itens": [
       "RIS HK Handguard",
       "Romanian AK Handguard",
@@ -1530,7 +1530,7 @@
     ]
   },
   {
-    "imagem": "img/Optics (MIRAS) (ATTACHS) 4.jpg",
+    "imagem": "img/Optics (MIRAS) (ATTACHS) 4.png",
     "itens": [
       "Trijicon ACOG",
       "TS-6X FFP",
@@ -1542,7 +1542,7 @@
     ]
   },
   {
-    "imagem": "img/Optics (MIRAS) (ATTACHS) 3.jpg",
+    "imagem": "img/Optics (MIRAS) (ATTACHS) 3.png",
     "itens": [
       "Mira telescópica PSO-1",
       "Mira telescópica PSO-1-1",
@@ -1567,7 +1567,7 @@
     ]
   },
   {
-    "imagem": "img/Optics (MIRAS) (ATTACHS) 2.jpg",
+    "imagem": "img/Optics (MIRAS) (ATTACHS) 2.png",
     "itens": [
       "Kobra Red Dot Sight",
       "Leupold DeltaPoint Sight",
@@ -1592,7 +1592,7 @@
     ]
   },
   {
-    "imagem": "img/Optics (MIRAS) (ATTACHS) 1.jpg",
+    "imagem": "img/Optics (MIRAS) (ATTACHS) 1.png",
     "itens": [
       "1P63",
       "A2 Rear Iron Sight AR-15",
@@ -1617,7 +1617,7 @@
     ]
   },
   {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 6.jpg",
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 6.png",
     "itens": [
       "Carregador 8 mun. P1",
       "Carregador 8 mun. Vaiga",
@@ -1626,7 +1626,7 @@
     ]
   },
   {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 5.jpg",
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 5.png",
     "itens": [
       "Carregador 20 mun. SVAL",
       "Carregador 20 mun. tambor Vaiga",
@@ -1651,7 +1651,7 @@
     ]
   },
   {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 4.jpg",
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 4.png",
     "itens": [
       "60rnd 6L31 AK 5.45 Mag",
       "60rnd Drum Mag",
@@ -1676,7 +1676,7 @@
     ]
   },
   {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 3.jpg",
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 3.png",
     "itens": [
       "30rnd AK12 Magazine",
       "30rnd FAL Magazine",
@@ -1701,7 +1701,7 @@
     ]
   },
   {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 2.jpg",
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 2.png",
     "itens": [
       "200rnd M249 Ammo Box",
       "20rnd 308 PMAG",
@@ -1726,7 +1726,7 @@
     ]
   },
   {
-    "imagem": "img/Magazines (PENTE) (ATTACHS) 1.jpg",
+    "imagem": "img/Magazines (PENTE) (ATTACHS) 1.png",
     "itens": [
       "100rnd PK Ammo Box",
       "10rnd ASH12 Magazine",
