@@ -24,7 +24,7 @@
 
         /* Exibição da Imagem */
         .resultado { margin-top: 30px; }
-        img { max-width: 100%; border: 3px solid #333; border-radius: 8px; animation: fadeIn 0.5s; }
+        .resultado img { max-width: 100%; border: 3px solid #333; border-radius: 8px; animation: fadeIn 0.5s; display: block; margin: 0 auto 20px auto; }
         
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         .hidden { display: none; }
@@ -38,11 +38,9 @@
         <input type="text" id="busca" placeholder="Pesquisar item (ex: M4A1, C4, AA-12...)" onkeyup="buscarItem()">
     </div>
 
-    <div id="menuCategorias" class="categories-container">
-        </div>
+    <div id="menuCategorias" class="categories-container"></div>
 
-    <div id="menuSubCategorias" class="sub-categories">
-        </div>
+    <div id="menuSubCategorias" class="sub-categories"></div>
 
     <div class="resultado" id="resultadoImg">
         <p id="placeholderText">Use a busca acima ou escolha uma categoria.</p>
@@ -50,6 +48,11 @@
 
     <script>
         let bancoDeDados = [];
+
+        // Codifica o caminho da imagem para URL válida (trata espaços e parênteses)
+        function encodePath(caminho) {
+            return caminho.split('/').map(parte => encodeURIComponent(parte)).join('/');
+        }
 
         // Carrega o JSON
         fetch('indice.json')
@@ -70,12 +73,15 @@
                 return;
             }
 
-            let achou = bancoDeDados.find(bloco => 
+            // Busca TODOS os blocos que contenham o item (não apenas o primeiro)
+            let encontrados = bancoDeDados.filter(bloco =>
                 bloco.itens.some(i => i.toLowerCase().includes(texto))
             );
 
-            if (achou) {
-                divImg.innerHTML = `<img src="${achou.imagem}">`;
+            if (encontrados.length > 0) {
+                divImg.innerHTML = encontrados
+                    .map(b => `<img src="${encodePath(b.imagem)}">`)
+                    .join('');
             } else {
                 divImg.innerHTML = '<p style="color: #ff4c4c">Item não encontrado.</p>';
             }
@@ -100,23 +106,35 @@
         }
 
         // 3. FUNÇÃO PARA MOSTRAR AS SUBCATEGORIAS (Assault, Snipers...)
+        //    Agrupa entradas com o mesmo nome de subcategoria num único botão
         function mostrarSubCategorias(catPai) {
             const subMenu = document.getElementById('menuSubCategorias');
             subMenu.innerHTML = '';
             subMenu.style.display = 'block';
-            document.getElementById('busca').value = ''; // limpa a busca
+            document.getElementById('busca').value = '';
+            document.getElementById('resultadoImg').innerHTML = '';
 
             // Filtra os arquivos que pertencem àquela categoria pai
             const subs = bancoDeDados.filter(b => b.imagem.includes(`(${catPai})`));
 
+            // Agrupa por nome de subcategoria (evita duplicatas como Handguards 1, 2, 3, 4)
+            const grupos = {};
             subs.forEach(s => {
-                // Pega apenas o nome da subcategoria antes do parênteses
-                let nomeSub = s.imagem.replace('img/', '').split(' (')[0];
+                // Pega apenas o nome da subcategoria antes do primeiro parêntese
+                let nomeSub = s.imagem.replace('img/', '').split(' (')[0].trim();
+                if (!grupos[nomeSub]) grupos[nomeSub] = [];
+                grupos[nomeSub].push(s.imagem);
+            });
+
+            // Cria um botão por nome único; ao clicar mostra todas as imagens do grupo
+            Object.entries(grupos).forEach(([nome, imagens]) => {
                 let btn = document.createElement('button');
                 btn.className = 'btn-sub';
-                btn.innerText = nomeSub;
+                btn.innerText = nome;
                 btn.onclick = () => {
-                    document.getElementById('resultadoImg').innerHTML = `<img src="${s.imagem}">`;
+                    document.getElementById('resultadoImg').innerHTML = imagens
+                        .map(img => `<img src="${encodePath(img)}">`)
+                        .join('');
                 };
                 subMenu.appendChild(btn);
             });
