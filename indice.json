@@ -2069,5 +2069,64 @@
     "itens": [
       "STR_snowmobile_white"
     ]
+  },
+  {
+    "imagem": "img/Tools (FERRAMENTAS) 1.png",
+    "itens": [
+      "Abridor de lata",
+      "Alicate",
+      "Amaciador de carne",
+      "Anzol de pesca",
+      "Binóculos",
+      "Black Spray Paint",
+      "Bússola",
+      "Bússola de orientação",
+      "Chave de fenda",
+      "Chave de roda",
+      "Chave inglesa",
+      "Clawhammer",
+      "Ding Dong Breaching Hammer",
+      "Face Paint Stick",
+      "Foice",
+      "Forcado",
+      "Green Spray Paint",
+      "Key Tool",
+      "Keycard Case",
+      "Kit de costura"
+    ]
+  },
+  {
+    "imagem": "img/Tools (FERRAMENTAS) 2.png",
+    "itens": [
+      "Kit de costura de couro",
+      "Kit de limpeza de arma",
+      "Machadinha",
+      "Machado de bombeiro",
+      "Machado de bombeiro",
+      "Machado divisor",
+      "Marreta",
+      "Martelo",
+      "Maçarico",
+      "Minhoca",
+      "Pedra de amolar",
+      "Picareta",
+      "Pá",
+      "Pá",
+      "Pé de cabra",
+      "Receptor de GPS",
+      "Red Chainsaw",
+      "Serra com arco",
+      "Serrote",
+      "Tan Spray Paint"
+    ]
+  },
+  {
+    "imagem": "img/Tools (FERRAMENTAS) 3.png",
+    "itens": [
+      "Vara de pesca",
+      "Vassoura",
+      "White Spray Paint",
+      "Wrist Compass"
+    ]
   }
 ]
